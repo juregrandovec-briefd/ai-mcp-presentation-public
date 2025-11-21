@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-World Examples - AI Coding Agents & MCPs</title>
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/preskok-briefd.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- INTRO SLIDE -->
+            <section class="center">
+                <div class="section-header">
+                    <h1>Real-World Example</h1>
+                    <h3>Claude Code in Action</h3>
+                    <p style="margin-top: 30px; font-size: 0.9em;">Watch how Claude Code builds a complete feature in 15 minutes</p>
+                </div>
+
+                <div class="stats-box" style="margin-top: 50px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    <h2 style="color: var(--briefd-green);">Building a Movie App Watchlist</h2>
+                    <p style="font-size: 1.1em; margin-top: 20px;">From understanding an unfamiliar codebase to deploying a full feature</p>
+                    <p style="font-size: 0.85em; margin-top: 15px; color: #666;">
+                        Step-by-step demonstration with video tutorial
+                    </p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 50px;">
+                    <p style="font-size: 1.1em;">📺 <strong>15-Minute Video Tutorial</strong> by Peter Yang</p>
+                    <p style="margin-top: 10px;">
+                        <a href="https://www.youtube.com/watch?v=GepHGs_CZdk" style="color: var(--briefd-green); font-weight: bold;">Watch on YouTube →</a>
+                    </p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 40px;">
+                    <p><a href="index.html">← Back to Main Presentation</a></p>
+                </div>
+            </section>
+
+            <!-- Claude Code in Practice -->
+            <section class="center section-header">
+                <h1>Claude Code in Practice</h1>
+                <h3>Building a Movie App Feature in 15 Minutes</h3>
+                <p style="margin-top: 20px; font-size: 0.9em;"><strong>Watch:</strong> <a href="https://www.youtube.com/watch?v=GepHGs_CZdk" style="color: var(--briefd-green);">Video Tutorial by Peter Yang</a></p>
+            </section>
+
+            <section>
+                <h2>The Task</h2>
+
+                <div class="highlight-box" style="margin-top: 30px;">
+                    <h3>🎬 Goal: Add Watchlist Feature to Movie Discovery App</h3>
+                    <p style="font-size: 1.1em; margin-top: 15px;">
+                        Start with an existing movie app and add a complete watchlist system in under 15 minutes
+                    </p>
+                </div>
+
+                <div class="two-column" style="margin-top: 30px;">
+                    <div class="mcp-box">
+                        <h4>Starting Point:</h4>
+                        <ul style="font-size: 0.85em;">
+                            <li>Existing movie discovery app</li>
+                            <li>Unfamiliar codebase</li>
+                            <li>Need to understand architecture first</li>
+                            <li>Add new feature without breaking existing code</li>
+                            <li>Integrate with TMDB API</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>What Needs to Be Built:</h4>
+                        <ul style="font-size: 0.85em;">
+                            <li>✅ User can add movies to watchlist</li>
+                            <li>✅ Watchlist persists across sessions</li>
+                            <li>✅ Remove movies from watchlist</li>
+                            <li>✅ View full watchlist page</li>
+                            <li>✅ Integrate with existing UI</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Step 1: Understanding the Codebase</h2>
+
+                <div class="mcp-box" style="margin-top: 30px;">
+                    <h3>Claude Analyzes the Project First</h3>
+                </div>
+
+                <div class="code-box" style="margin-top: 25px; font-size: 0.75em; text-align: left;">
+                    <strong>$ claude</strong><br>
+                    <span style="color: #4AF626;">></span> Explain the architecture of this movie app<br><br>
+
+                    <span style="color: #888;">Claude examines the codebase and explains:</span><br>
+                    • Tech stack: React + Vite + TypeScript<br>
+                    • Component structure and routing<br>
+                    • How TMDB API integration works<br>
+                    • State management approach<br>
+                    • Styling with Tailwind CSS
+                </div>
+
+                <div class="two-column" style="margin-top: 25px;">
+                    <div class="highlight-box">
+                        <h4>What Claude Does:</h4>
+                        <ul style="font-size: 0.85em;">
+                            <li>Reads through all project files</li>
+                            <li>Identifies key components & patterns</li>
+                            <li>Explains data flow</li>
+                            <li>Notes configuration files</li>
+                            <li>Suggests where new features fit</li>
+                        </ul>
+                    </div>
+                    <div class="mcp-box">
+                        <h4>Developer Learns:</h4>
+                        <ul style="font-size: 0.85em;">
+                            <li>How the app is structured</li>
+                            <li>Where to add new features</li>
+                            <li>Coding patterns to follow</li>
+                            <li>API integration approach</li>
+                            <li>No need to read docs first!</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Step 2: Setup & Configuration</h2>
+
+                <div class="code-box" style="margin-top: 30px; font-size: 0.75em; text-align: left;">
+                    <strong>$ claude</strong><br>
+                    <span style="color: #4AF626;">></span> Install dependencies and run this app locally<br><br>
+
+                    <span style="color: #888;">Claude executes:</span><br>
+                    $ npm install<br>
+                    $ npm run dev<br><br>
+
+                    <span style="color: #888;">Then configures TMDB API key:</span><br>
+                    • Creates .env file<br>
+                    • Adds VITE_TMDB_API_KEY<br>
+                    • Verifies API connection<br>
+                    • App running at localhost:5173
+                </div>
+
+                <div class="highlight-box" style="margin-top: 25px;">
+                    <h3>Autonomous Execution</h3>
+                    <p style="font-size: 0.95em; margin-top: 10px;">
+                        Claude handles terminal commands, environment setup, and verification - all without manual intervention
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Step 3: Plan Mode - Design First</h2>
+
+                <div class="highlight-box" style="margin-top: 30px;">
+                    <h3>Using Shift+Tab for Planning</h3>
+                    <p style="font-size: 0.95em; margin-top: 10px;">Before writing code, Claude creates a detailed specification</p>
+                </div>
+
+                <div class="code-box" style="margin-top: 25px; font-size: 0.7em; text-align: left;">
+                    <strong>$ claude</strong> <em>(Shift+Tab for Plan Mode)</em><br>
+                    <span style="color: #4AF626;">></span> Add a watchlist feature where users can save and manage their favorite movies<br><br>
+
+                    <strong>Claude's Plan (3 Components):</strong><br><br>
+
+                    <strong>1. State Management (Zustand store)</strong><br>
+                    • Create watchlistStore.ts<br>
+                    • addToWatchlist() function<br>
+                    • removeFromWatchlist() function<br>
+                    • Persist to localStorage<br><br>
+
+                    <strong>2. UI Components</strong><br>
+                    • WatchlistButton.tsx for add/remove<br>
+                    • WatchlistPage.tsx to display saved movies<br>
+                    • Update navigation with watchlist link<br><br>
+
+                    <strong>3. Integration</strong><br>
+                    • Add buttons to movie cards<br>
+                    • Create /watchlist route<br>
+                    • Style with Tailwind CSS
+                </div>
+
+                <div class="stats-box" style="margin-top: 20px;">
+                    <p>This planning step ensures clean architecture before any code is written</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Step 4: Implementation</h2>
+
+                <div class="mcp-box" style="margin-top: 30px;">
+                    <h3>From Plan to Production Code</h3>
+                </div>
+
+                <div class="two-column" style="margin-top: 25px;">
+                    <div class="highlight-box">
+                        <h4>Claude Creates:</h4>
+                        <ul style="font-size: 0.8em;">
+                            <li><code>stores/watchlistStore.ts</code><br>
+                                <span style="color: #666; font-size: 0.9em;">Zustand store with persistence</span>
+                            </li>
+                            <li><code>components/WatchlistButton.tsx</code><br>
+                                <span style="color: #666; font-size: 0.9em;">Interactive add/remove button</span>
+                            </li>
+                            <li><code>pages/WatchlistPage.tsx</code><br>
+                                <span style="color: #666; font-size: 0.9em;">Display saved movies grid</span>
+                            </li>
+                            <li><code>Updated routing</code><br>
+                                <span style="color: #666; font-size: 0.9em;">Add /watchlist route</span>
+                            </li>
+                            <li><code>Updated navigation</code><br>
+                                <span style="color: #666; font-size: 0.9em;">Link to watchlist page</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mcp-box">
+                        <h4>Key Features:</h4>
+                        <ul style="font-size: 0.85em;">
+                            <li>✅ Add/remove movies</li>
+                            <li>✅ localStorage persistence</li>
+                            <li>✅ Visual feedback (heart icon)</li>
+                            <li>✅ Responsive grid layout</li>
+                            <li>✅ Empty state messaging</li>
+                            <li>✅ Seamless integration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 25px; text-align: center;">
+                    <p><strong>All code follows the existing patterns</strong> Claude identified during analysis</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Results: 15 Minutes to Full Feature</h2>
+
+                <div class="three-column" style="margin-top: 30px;">
+                    <div class="stats-box">
+                        <h3>15 min</h3>
+                        <p>Total development time</p>
+                    </div>
+                    <div class="stats-box">
+                        <h3>5</h3>
+                        <p>Files created/modified</p>
+                    </div>
+                    <div class="stats-box">
+                        <h3>100%</h3>
+                        <p>Working on first try</p>
+                    </div>
+                </div>
+
+                <div class="two-column" style="margin-top: 30px;">
+                    <div class="highlight-box">
+                        <h4>Traditional Approach:</h4>
+                        <ul style="font-size: 0.9em;">
+                            <li>⏱️ 2-3 hours for experienced dev</li>
+                            <li>📚 Read docs on Zustand & routing</li>
+                            <li>🔍 Study existing code patterns</li>
+                            <li>🐛 Debug integration issues</li>
+                            <li>🎨 Match existing design</li>
+                        </ul>
+                    </div>
+                    <div class="mcp-box">
+                        <h4>With Claude Code:</h4>
+                        <ul style="font-size: 0.9em;">
+                            <li>⚡ 15 minutes end-to-end</li>
+                            <li>🤖 AI explains architecture</li>
+                            <li>📋 Plan created automatically</li>
+                            <li>✅ Clean, working code</li>
+                            <li>🎯 Perfectly integrated</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="stats-box" style="margin-top: 25px;">
+                    <h3>~85% Time Savings</h3>
+                    <p>From hours to minutes with AI assistance</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Learn More & Try It Yourself</h2>
+
+                <div class="two-column" style="margin-top: 30px;">
+                    <div class="highlight-box">
+                        <h3>📺 Video Tutorial</h3>
+                        <p style="font-size: 0.9em; margin-top: 15px;">
+                            <strong>15-Minute Movie App Tutorial</strong><br>
+                            by Peter Yang
+                        </p>
+                        <p style="margin-top: 15px;">
+                            <a href="https://www.youtube.com/watch?v=GepHGs_CZdk" style="color: var(--briefd-green); font-weight: bold;">Watch on YouTube →</a>
+                        </p>
+                    </div>
+                    <div class="mcp-box">
+                        <h3>📚 Official Resources</h3>
+                        <ul style="font-size: 0.85em; text-align: left;">
+                            <li><a href="https://code.claude.com/docs" style="color: var(--briefd-green);">Claude Code Documentation</a></li>
+                            <li><a href="https://code.claude.com/docs/en/common-workflows" style="color: var(--briefd-green);">Common Workflows Guide</a></li>
+                            <li><a href="https://anthropic.skilljar.com/claude-code-in-action" style="color: var(--briefd-green);">Claude Code in Action (Course)</a></li>
+                            <li><a href="https://www.anthropic.com/webinars/claude-code-live" style="color: var(--briefd-green);">Claude Code Live Webinar</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 30px; text-align: center;">
+                    <h4>Try Claude Code Today</h4>
+                    <div class="code-box" style="margin-top: 15px; font-size: 0.75em;">
+                        npm install -g @anthropic-ai/claude-code<br>
+                        claude-code auth<br>
+                        claude-code
+                    </div>
+                </div>
+            </section>
+
+            <!-- CLOSING SLIDE -->
+            <section class="center">
+                <div class="section-header">
+                    <h1>Key Takeaways</h1>
+                </div>
+
+                <div class="two-column" style="margin-top: 40px;">
+                    <div class="highlight-box">
+                        <h3>What Makes This Work</h3>
+                        <ul style="font-size: 0.9em; text-align: left;">
+                            <li>✅ Plan before coding (Shift+Tab)</li>
+                            <li>✅ Let AI understand codebase first</li>
+                            <li>✅ Clear, specific requirements</li>
+                            <li>✅ Follow existing patterns</li>
+                            <li>✅ Iterate and refine</li>
+                        </ul>
+                    </div>
+                    <div class="mcp-box">
+                        <h3>The Results</h3>
+                        <ul style="font-size: 0.9em; text-align: left;">
+                            <li><strong>15 minutes</strong> - Full feature implementation</li>
+                            <li><strong>85%</strong> - Time savings vs traditional</li>
+                            <li><strong>5 files</strong> - Created/modified</li>
+                            <li><strong>100%</strong> - Working on first try</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="stats-box" style="margin-top: 40px;">
+                    <h3>Ready to Try It?</h3>
+                    <p style="font-size: 1.1em;">This isn't a future possibility — Claude Code is available today</p>
+                    <div class="code-box" style="margin-top: 20px; font-size: 0.75em;">
+                        npm install -g @anthropic-ai/claude-code<br>
+                        claude-code auth<br>
+                        claude-code
+                    </div>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 40px;">
+                    <p style="font-size: 1.2em;"><a href="index.html">← Back to Main Presentation</a></p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        Reveal.initialize({
+            // Presentation size configuration
+            width: 1920,
+            height: 1080,
+            margin: 0.04,
+            minScale: 0.2,
+            maxScale: 1.5,
+
+            // Other settings
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            controls: true,
+            progress: true,
+            center: false,
+            slideNumber: 'c/t',
+            showSlideNumber: 'all',
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
+    </script>
+</body>
+</html>
