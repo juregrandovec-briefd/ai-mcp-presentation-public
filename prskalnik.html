@@ -772,54 +772,52 @@
             <section>
                 <h2>📚 Resources & Next Steps</h2>
 
-                <div class="two-column" style="margin-top: 20px; gap: 20px;">
-                    <div class="highlight-box" style="padding: 20px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 20px; margin-top: 30px; height: 75vh;">
+                    <!-- Card 1: Essential Resources -->
+                    <div class="highlight-box" style="padding: 25px; display: flex; flex-direction: column;">
                         <h3>📖 Essential Resources</h3>
-                        <ul style="font-size: 0.9em; margin-top: 10px; line-height: 1.7;">
-                            <li><strong>Claude Code Docs:</strong> docs.claude.com</li>
-                            <li><strong>MCP Protocol:</strong> modelcontextprotocol.io</li>
-                            <li><strong>Community MCPs:</strong> github.com/punkpeye/awesome-mcp-servers</li>
+                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8; flex-grow: 1;">
+                            <li><strong>Claude Code Docs:</strong><br>docs.claude.com</li>
+                            <li><strong>MCP Protocol:</strong><br>modelcontextprotocol.io</li>
+                            <li><strong>Community MCPs:</strong><br>github.com/punkpeye/awesome-mcp-servers</li>
                         </ul>
                     </div>
 
-                    <div class="mcp-box" style="padding: 20px;">
+                    <!-- Card 2: Try It Monday Morning -->
+                    <div class="mcp-box" style="padding: 25px; display: flex; flex-direction: column;">
                         <h3>🚀 Try It Monday Morning</h3>
-                        <div class="code-box" style="margin-top: 10px; font-size: 0.75em;">
+                        <div class="code-box" style="margin-top: 15px; font-size: 0.7em; flex-grow: 1;">
                             # Install (macOS/Linux)<br>
                             curl -fsSL https://claude.ai/install.sh | bash<br><br>
-                            # Or with Homebrew<br>
-                            brew install --cask claude-code<br><br>
+                            # Or: brew install --cask claude-code<br><br>
                             # Start in your project<br>
                             cd your-project<br>
                             claude<br><br>
                             # First prompt<br>
                             > Analyze this codebase
                         </div>
-                        <p style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">You'll be prompted to log in on first use</p>
+                        <p style="font-size: 0.8em; margin-top: 10px; font-style: italic; color: #666;">You'll be prompted to log in on first use</p>
                     </div>
-                </div>
 
-                <div style="display: flex; justify-content: center; align-items: center; gap: 30px; margin-top: 25px;">
-                    <div class="mcp-box" style="text-align: center; flex: 1; max-width: 600px; padding: 20px;">
-                        <h3>📺 Watch Claude Code in Action</h3>
-                        <p style="font-size: 1em; margin-top: 8px;"><a href="examples.html" style="color: var(--briefd-green); font-weight: bold;">See a Feature Built in 15 Minutes →</a></p>
-                    </div>
-                    <div style="text-align: center;">
+                    <!-- Card 3: Watch Demo -->
+                    <div class="mcp-box" style="padding: 25px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                        <h3>📺 Watch Demo</h3>
                         <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://juregrandovec-briefd.github.io/ai-mcp-presentation/examples.html"
                              alt="QR Code for Example"
-                             style="border: 3px solid var(--briefd-green); border-radius: 8px; padding: 8px; background: white;">
-                        <p style="font-size: 0.65em; margin-top: 6px; color: #666;">Scan to watch demo</p>
+                             style="border: 3px solid var(--briefd-green); border-radius: 8px; padding: 8px; background: white; margin-top: 15px;">
+                        <p style="font-size: 0.85em; margin-top: 10px;"><a href="examples.html" style="color: var(--briefd-green); font-weight: bold;">Feature Built in 15 Minutes</a></p>
                     </div>
-                </div>
 
-                <div class="section-header" style="margin-top: 15px;">
-                    <h1>Questions?</h1>
-                    <p style="font-size: 1.05em; margin-top: 15px;">
-                        <strong>Jure Grandovec</strong>
-                    </p>
-                    <p style="font-size: 0.9em; margin-top: 10px; color: #666;">
-                        Contact OR talk to me after the presentation
-                    </p>
+                    <!-- Card 4: Questions -->
+                    <div class="highlight-box" style="padding: 25px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                        <h1 style="font-size: 2.5em; margin-bottom: 20px;">Questions?</h1>
+                        <p style="font-size: 1.1em;">
+                            <strong>Jure Grandovec</strong>
+                        </p>
+                        <p style="font-size: 0.9em; margin-top: 10px; color: #666;">
+                            Contact OR talk to me after the presentation
+                        </p>
+                    </div>
                 </div>
             </section>
 
