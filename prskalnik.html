@@ -406,31 +406,43 @@
                 </aside>
             </section>
 
-            <!-- SLIDE 8: MCP Best Practices -->
+            <!-- SLIDE: MCP Safety -->
             <section>
-                <h2>MCP Security Best Practices</h2>
+                <h2>MCP Safety</h2>
 
-                <div class="two-column" style="margin-top: 40px;">
-                    <div class="highlight-box" style="padding: 35px;">
-                        <h3>🔐 Security Essentials</h3>
-                        <ul style="font-size: 1em; margin-top: 20px; line-height: 1.9;">
-                            <li>Start MCPs in <strong>read-only mode</strong></li>
+                <div style="margin-top: 50px;">
+                    <div class="mcp-box" style="padding: 40px; max-width: 800px; margin: 0 auto;">
+                        <h3>🔐 Keep MCPs Secure</h3>
+                        <ul style="font-size: 1.1em; margin-top: 25px; line-height: 2;">
+                            <li>Start in <strong>read-only mode</strong></li>
                             <li>Use <strong>separate API keys</strong> per service</li>
-                            <li>Never share <strong>.env files</strong> with agents</li>
-                        </ul>
-                    </div>
-                    <div class="mcp-box" style="padding: 35px;">
-                        <h3>✅ Operational Best Practices</h3>
-                        <ul style="font-size: 1em; margin-top: 20px; line-height: 1.9;">
-                            <li>Use <strong>pre-commit hooks</strong> to block secrets</li>
-                            <li>Always review before approving changes</li>
                             <li>Expand permissions <strong>gradually</strong></li>
                         </ul>
                     </div>
                 </div>
 
                 <aside class="notes">
-                    Keep it simple: start with read-only mode, use separate API tokens, never share .env files, and always review changes. Pre-commit hooks prevent accidents. Expand permissions gradually as you build trust.
+                    MCP safety: start read-only, use separate API keys for each service, and expand permissions gradually as you build trust.
+                </aside>
+            </section>
+
+            <!-- SLIDE: Claude Code Safety -->
+            <section>
+                <h2>Claude Code Safety</h2>
+
+                <div style="margin-top: 50px;">
+                    <div class="highlight-box" style="padding: 40px; max-width: 800px; margin: 0 auto;">
+                        <h3>✅ Review Everything</h3>
+                        <ul style="font-size: 1.1em; margin-top: 25px; line-height: 2;">
+                            <li><strong>Review code</strong> before accepting changes</li>
+                            <li>Use <strong>pre-commit hooks</strong> to block secrets</li>
+                            <li>Never share <strong>.env files</strong> with AI</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    Claude Code safety: always review changes before accepting, use pre-commit hooks to prevent secrets from being committed, and never share environment files with AI.
                 </aside>
             </section>
             <!-- SECTION: The Tools I Use -->
@@ -620,128 +632,95 @@
 
             <!-- FINDING 1: Developer Workload Shift -->
             <section>
-                <h2>Finding #1: The Fundamental Shift in Developer Work</h2>
+                <h2>Finding #1: Less Coding, More Thinking</h2>
 
-                <div class="highlight-box" style="margin-top: 30px; padding: 30px; text-align: center;">
-                    <p style="font-size: 1.2em;"><strong>The future: Less coding, more thinking and problem-solving</strong></p>
-                </div>
-
-                <div class="two-column" style="margin-top: 40px;">
-                    <div class="mcp-box" style="padding: 30px;">
-                        <h3>🔄 The Traditional Developer Role</h3>
-                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
-                            <li><strong>Heavy focus:</strong> Writing boilerplate code</li>
-                            <li><strong>Time spent:</strong> Typing implementations</li>
-                            <li><strong>Common tasks:</strong> Manual debugging & fixing</li>
-                            <li><strong>Limited:</strong> Planning and design time</li>
-                            <li><strong>Minimal:</strong> Code review attention</li>
+                <div class="two-column" style="margin-top: 50px;">
+                    <div class="mcp-box" style="padding: 35px;">
+                        <h3>🔄 Before AI Agents</h3>
+                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
+                            <li>Writing boilerplate & typing code</li>
+                            <li>Manual debugging and fixing</li>
+                            <li>Limited planning time</li>
                         </ul>
                     </div>
-                    <div class="highlight-box" style="padding: 30px;">
-                        <h3>🚀 The Emerging Developer Role</h3>
-                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
-                            <li><strong>Heavy focus:</strong> Planning in plan mode</li>
-                            <li><strong>Time spent:</strong> Reviewing agent output</li>
-                            <li><strong>Common tasks:</strong> Refining prompts & iteration</li>
-                            <li><strong>Expanded:</strong> Architecture & design thinking</li>
-                            <li><strong>Critical:</strong> Quality assurance & review</li>
+                    <div class="highlight-box" style="padding: 35px;">
+                        <h3>🚀 With AI Agents</h3>
+                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
+                            <li>Planning in plan mode first</li>
+                            <li>Reviewing agent output carefully</li>
+                            <li>Making architectural decisions</li>
                         </ul>
                     </div>
-                </div>
-
-                <div class="warning-box" style="margin-top: 30px; padding: 25px; max-width: 900px; margin-left: auto; margin-right: auto;">
-                    <p style="font-size: 1em;"><strong>Key insight:</strong> AI agents handle the typing, but developers must think deeper about problems, plan better, and review more carefully. The shift elevates the developer role from coder to architect and reviewer.</p>
                 </div>
 
                 <aside class="notes">
-                    AI handles mechanical coding, developers focus on thinking and architecture. Plan mode forces better problem understanding upfront. The role shifts from "code writer" to "solution architect and quality guardian."
+                    AI handles mechanical coding, developers focus on thinking and architecture. The role shifts from "code writer" to "solution architect and quality guardian."
                 </aside>
             </section>
 
             <!-- FINDING 2: Code Review & Context Paradox -->
             <section>
-                <h2>Finding #2: Understanding Matters MORE, Not Less</h2>
+                <h2>Finding #2: Expertise Becomes More Valuable</h2>
 
-                <div class="highlight-box" style="margin-top: 30px; padding: 30px; text-align: center;">
-                    <p style="font-size: 1.2em;"><strong>AI doesn't reduce the need for expertise - it amplifies it</strong></p>
-                </div>
-
-                <div style="margin-top: 40px;">
-                    <div class="mcp-box" style="padding: 30px; margin-bottom: 20px;">
-                        <h3>🔍 Why Code Review Is Critical</h3>
-                        <ul style="font-size: 1em; margin-top: 15px; line-height: 1.9;">
-                            <li>Agents can generate working code that violates your architecture patterns</li>
-                            <li>Security vulnerabilities require human review</li>
-                            <li><strong>You're approving entire workflows, not just lines of code</strong></li>
+                <div class="two-column" style="margin-top: 50px;">
+                    <div class="mcp-box" style="padding: 35px;">
+                        <h3>🔍 You Must Review Everything</h3>
+                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
+                            <li>Agents may violate architecture patterns</li>
+                            <li>Security needs human validation</li>
+                            <li>You approve workflows, not just code</li>
                         </ul>
                     </div>
 
-                    <div class="highlight-box" style="padding: 30px;">
-                        <h3>🎯 Why Project Knowledge Enables Better Prompting</h3>
-                        <ul style="font-size: 1em; margin-top: 15px; line-height: 1.9;">
-                            <li>You know what to ask for: "Follow the pattern in OrderController"</li>
-                            <li>You spot mistakes faster: "This breaks our caching strategy"</li>
-                            <li>You set boundaries: "Only modify files in /src/features/payments"</li>
+                    <div class="highlight-box" style="padding: 35px;">
+                        <h3>🎯 Deep Knowledge = Better Prompts</h3>
+                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
+                            <li>Reference existing patterns & files</li>
+                            <li>Spot mistakes immediately</li>
+                            <li>Set clear boundaries</li>
                         </ul>
                     </div>
                 </div>
 
                 <aside class="notes">
-                    The paradox: AI makes expertise MORE valuable. Seniors prompt better, catch issues faster, and understand implications. Code review is now about validating workflows and architecture, not syntax.
+                    AI makes expertise MORE valuable. Seniors prompt better, catch issues faster, and understand implications. Code review validates workflows and architecture, not just syntax.
                 </aside>
             </section>
 
             <!-- FINDING 3: The Prompting Gap -->
             <section>
-                <h2>Finding #3: The Senior-Junior Prompting Gap</h2>
+                <h2>Finding #3: The Senior-Junior Gap & How to Bridge It</h2>
 
-                <div class="two-column" style="margin-top: 35px;">
+                <div class="two-column" style="margin-top: 40px;">
                     <div class="mcp-box" style="padding: 30px;">
-                        <h3>👴 Senior Developers</h3>
-                        <ul style="font-size: 0.85em; margin-top: 15px; line-height: 1.7;">
-                            <li><strong>Know the codebase:</strong> Reference existing patterns</li>
-                            <li><strong>Set clear boundaries:</strong> "Only touch auth module"</li>
-                            <li><strong>Catch mistakes fast:</strong> Spot architectural issues</li>
-                            <li><strong>Iterate effectively:</strong> Give specific feedback</li>
-                            <li><strong>Use context:</strong> Point to files, functions, lines</li>
+                        <h3>👴 Seniors: 3-5 iterations</h3>
+                        <ul style="font-size: 1em; margin-top: 15px; line-height: 1.9;">
+                            <li>Reference existing patterns</li>
+                            <li>Spot architecture issues fast</li>
+                            <li>Set clear boundaries</li>
                         </ul>
-                        <div class="highlight-box" style="margin-top: 20px; padding: 15px; font-size: 0.8em;">
-                            <strong>Result:</strong> 3-5 iterations to working solution
-                        </div>
                     </div>
                     <div class="highlight-box" style="padding: 30px;">
-                        <h3>👶 Junior Developers</h3>
-                        <ul style="font-size: 0.85em; margin-top: 15px; line-height: 1.7;">
-                            <li><strong>Vague requests:</strong> "Fix the bug" or "Add validation"</li>
-                            <li><strong>Don't know patterns:</strong> Can't reference examples</li>
-                            <li><strong>Miss issues:</strong> Don't spot architectural problems</li>
-                            <li><strong>Generic feedback:</strong> "It doesn't work"</li>
-                            <li><strong>No context:</strong> Can't point to specific code</li>
+                        <h3>👶 Juniors: 10+ iterations</h3>
+                        <ul style="font-size: 1em; margin-top: 15px; line-height: 1.9;">
+                            <li>Vague requests without context</li>
+                            <li>Miss pattern violations</li>
+                            <li>Accept wrong solutions</li>
                         </ul>
-                        <div class="mcp-box" style="margin-top: 20px; padding: 15px; font-size: 0.8em;">
-                            <strong>Result:</strong> 10+ iterations, or wrong solution accepted
-                        </div>
                     </div>
                 </div>
 
-                <div class="warning-box" style="margin-top: 30px; padding: 25px;">
-                    <h3 style="margin-bottom: 15px;">🌉 Bridging the Gap</h3>
-                    <div class="two-column" style="gap: 20px;">
-                        <ul style="font-size: 0.85em; line-height: 1.7;">
-                            <li><strong>CLAUDE.md files:</strong> Codify senior knowledge & patterns</li>
-                            <li><strong>Pair prompting:</strong> Juniors watch seniors prompt</li>
-                            <li><strong>Prompt templates:</strong> "Always include file paths and line numbers"</li>
-                        </ul>
-                        <ul style="font-size: 0.85em; line-height: 1.7;">
-                            <li><strong>Code review checklist:</strong> What to look for in agent output</li>
-                            <li><strong>Gradual autonomy:</strong> Start with simple tasks, expand slowly</li>
-                            <li><strong>Team retrospectives:</strong> Share what worked, what didn't</li>
-                        </ul>
-                    </div>
+                <div class="warning-box" style="margin-top: 40px; padding: 30px;">
+                    <h3 style="margin-bottom: 15px;">🌉 Bridge the Gap</h3>
+                    <ul style="font-size: 1em; line-height: 1.9;">
+                        <li><strong>CLAUDE.md files:</strong> Codify patterns and best practices</li>
+                        <li><strong>Pair prompting:</strong> Juniors learn by watching seniors</li>
+                        <li><strong>Prompt templates:</strong> Standardize context and boundaries</li>
+                    </ul>
                 </div>
 
                 <aside class="notes">
-                    Seniors are 10x more effective because they know what to ask and spot issues fast. Bridge the gap with CLAUDE.md files, pair prompting, and templates. AI doesn't replace learning - it shifts what you need to learn.
+                    Seniors are 10x more effective - 3-5 iterations vs 10+. Bridge the gap with CLAUDE.md files, pair prompting, and templates. AI doesn't replace learning, it shifts what you need to learn.
                 </aside>
             </section>
 
@@ -752,67 +731,40 @@
                 </div>
             </section>
 
-            <!-- SLIDE: The Future of AI Agent Development -->
+            <!-- SLIDE: The Future -->
             <section>
-                <h2>The Future of AI Agent Development</h2>
+                <h2>The Future: Developers as Orchestrators</h2>
 
-                <div class="highlight-box" style="margin-top: 20px; padding: 18px; text-align: center;">
-                    <p style="font-size: 1em;"><strong>Agents will automate everything except what matters most: thinking and deciding</strong></p>
-                </div>
-
-                <div class="two-column" style="margin-top: 20px; gap: 15px;">
-                    <div>
-                        <div class="mcp-box" style="padding: 18px; margin-bottom: 12px;">
-                            <h3>🤖 What Agents Will Do</h3>
-                            <ul style="font-size: 0.75em; margin-top: 8px; line-height: 1.5;">
-                                <li><strong>Writing tests:</strong> Unit, integration, E2E tests generated automatically</li>
-                                <li><strong>Documentation:</strong> Code comments, README files, API docs</li>
-                                <li><strong>PR reviews:</strong> Check style, patterns, security issues</li>
-                                <li><strong>Reading codebases:</strong> Understanding context from thousands of files</li>
-                                <li><strong>Routine refactoring:</strong> Applying patterns, updating dependencies</li>
-                            </ul>
-                        </div>
-                        <div class="highlight-box" style="padding: 18px;">
-                            <h3>👨‍💻 What Developers Will Do</h3>
-                            <ul style="font-size: 0.75em; margin-top: 8px; line-height: 1.5;">
-                                <li><strong>Review code:</strong> Validate agent output and decisions</li>
-                                <li><strong>Write prompts:</strong> Describe problems and requirements clearly</li>
-                                <li><strong>Make decisions:</strong> Architecture, patterns, trade-offs</li>
-                                <li><strong>Manage multiple agents:</strong> While one works, prompt another</li>
-                            </ul>
-                        </div>
+                <div class="two-column" style="margin-top: 50px;">
+                    <div class="mcp-box" style="padding: 35px;">
+                        <h3>🤖 Agents Automate</h3>
+                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
+                            <li>Write tests & documentation</li>
+                            <li>Review PRs for patterns & security</li>
+                            <li>Read massive codebases</li>
+                        </ul>
                     </div>
-                    <div>
-                        <div class="highlight-box" style="padding: 18px; margin-bottom: 12px;">
-                            <h3>🌐 Claude Code Goes Cloud</h3>
-                            <p style="font-size: 0.75em; margin-top: 8px; line-height: 1.5;">
-                                <strong>New:</strong> <a href="https://claude.ai/code" style="color: var(--briefd-green); font-weight: bold;">claude.ai/code</a>
-                            </p>
-                            <ul style="font-size: 0.75em; margin-top: 8px; line-height: 1.5;">
-                                <li>Cloud-based coding agent (no CLI needed)</li>
-                                <li>Work from any browser, any device</li>
-                                <li>Same powerful agent, more accessible</li>
-                                <li>Perfect for teams and collaboration</li>
-                            </ul>
-                        </div>
-                        <div class="mcp-box" style="padding: 18px;">
-                            <h3>⚡ Multi-Agent Workflow</h3>
-                            <ul style="font-size: 0.75em; margin-top: 8px; line-height: 1.5;">
-                                <li>Run multiple agent sessions simultaneously</li>
-                                <li>While Agent A writes tests, prompt Agent B for docs</li>
-                                <li>Parallel workflows = massive productivity gains</li>
-                                <li>Developer becomes orchestrator, not typist</li>
-                            </ul>
-                        </div>
+                    <div class="highlight-box" style="padding: 35px;">
+                        <h3>👨‍💻 Developers Orchestrate</h3>
+                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
+                            <li>Review & validate output</li>
+                            <li>Write clear prompts</li>
+                            <li>Make architectural decisions</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="warning-box" style="margin-top: 15px; padding: 15px; max-width: 900px; margin-left: auto; margin-right: auto;">
-                    <p style="font-size: 0.85em;"><strong>Bottom line:</strong> The future isn't "AI replaces developers" - it's "developers orchestrate AI agents to handle repetitive work while focusing on architecture, decisions, and quality."</p>
+                <div class="warning-box" style="margin-top: 50px; padding: 35px;">
+                    <h3 style="margin-bottom: 15px;">⚡ Multi-Agent Future</h3>
+                    <ul style="font-size: 1.05em; line-height: 2;">
+                        <li><strong>claude.ai/code:</strong> Cloud-based agents, work from any device</li>
+                        <li><strong>Run multiple agents:</strong> Tests, docs, reviews in parallel</li>
+                        <li><strong>Your role:</strong> Orchestrate agents, not write code</li>
+                    </ul>
                 </div>
 
                 <aside class="notes">
-                    The future is clear: agents automate all manual work - tests, docs, PR reviews, reading massive codebases. Developers focus on reviewing, prompting, and making decisions. Multi-agent workflows mean working on multiple tasks simultaneously. Claude.ai/code brings this to the cloud - no CLI needed.
+                    Agents automate tests, docs, and PR reviews. Developers orchestrate multiple agents in parallel. Claude.ai/code brings this to the cloud. The future is developers as orchestrators, not typists.
                 </aside>
             </section>
 
@@ -820,61 +772,34 @@
             <section>
                 <h2>📚 Resources & Next Steps</h2>
 
-                <div class="two-column">
-                    <div>
-                        <div class="highlight-box">
-                            <h3>Official Documentation</h3>
-                            <ul style="font-size: 0.8em;">
-                                <li><strong>Claude Code</strong><br>
-                                    <code>docs.claude.com/en/docs/claude-code/overview</code></li>
-                                <li><strong>MCP Protocol</strong><br>
-                                    <code>modelcontextprotocol.io</code></li>
-                                <li><strong>Best Practices</strong><br>
-                                    <code>anthropic.com/engineering/claude-code-best-practices</code></li>
-                            </ul>
-                        </div>
-
-                        <div class="highlight-box" style="margin-top: 15px;">
-                            <h3>Community</h3>
-                            <ul style="font-size: 0.8em;">
-                                <li><strong>MCP Servers</strong><br>
-                                    <code>github.com/modelcontextprotocol</code></li>
-                                <li><strong>Awesome MCP</strong><br>
-                                    <code>github.com/punkpeye/awesome-mcp-servers</code></li>
-                            </ul>
-                        </div>
+                <div class="two-column" style="margin-top: 40px; gap: 30px;">
+                    <div class="highlight-box" style="padding: 30px;">
+                        <h3>📖 Essential Resources</h3>
+                        <ul style="font-size: 0.95em; margin-top: 15px; line-height: 1.9;">
+                            <li><strong>Claude Code Docs:</strong> docs.claude.com</li>
+                            <li><strong>MCP Protocol:</strong> modelcontextprotocol.io</li>
+                            <li><strong>Community MCPs:</strong> github.com/punkpeye/awesome-mcp-servers</li>
+                        </ul>
                     </div>
 
-                    <div>
-                        <div class="mcp-box">
-                            <h3>Try It Monday Morning</h3>
-                            <div class="code-box" style="margin-top: 10px; font-size: 0.75em;">
-                                # 1. Install<br>
-                                npm install -g @anthropic-ai/claude-code<br><br>
-
-                                # 2. Auth<br>
-                                claude-code auth<br><br>
-
-                                # 3. Start<br>
-                                claude-code<br><br>
-
-                                # 4. First prompt<br>
-                                > Analyze this codebase
-                            </div>
+                    <div class="mcp-box" style="padding: 30px;">
+                        <h3>🚀 Try It Monday Morning</h3>
+                        <div class="code-box" style="margin-top: 15px; font-size: 0.8em;">
+                            # Install & Start<br>
+                            npm install -g @anthropic-ai/claude-code<br>
+                            claude-code auth<br>
+                            claude-code<br><br>
+                            # First prompt<br>
+                            > Analyze this codebase
                         </div>
-
-                        <div class="stats-box" style="margin-top: 15px;">
-                            <h4>Start Simple</h4>
-                            <p style="font-size: 0.85em;">1 agent + 2-3 MCPs<br>Measure results<br>Scale gradually</p>
-                        </div>
+                        <p style="font-size: 0.9em; margin-top: 15px; font-style: italic; color: #666;">Start with 1 agent + 2-3 MCPs, measure results, scale gradually</p>
                     </div>
                 </div>
 
-                <div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 30px;">
-                    <div class="mcp-box" style="text-align: center; flex: 1; max-width: 600px;">
+                <div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 40px;">
+                    <div class="mcp-box" style="text-align: center; flex: 1; max-width: 600px; padding: 25px;">
                         <h3>📺 Watch Claude Code in Action</h3>
                         <p style="font-size: 1.1em; margin-top: 10px;"><a href="examples.html" style="color: var(--briefd-green); font-weight: bold;">See a Feature Built in 15 Minutes →</a></p>
-                        <p style="font-size: 0.85em; margin-top: 10px; color: #666;">Real workflow demonstration with video tutorial</p>
                     </div>
                     <div style="text-align: center;">
                         <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://juregrandovec-briefd.github.io/ai-mcp-presentation/examples.html"
