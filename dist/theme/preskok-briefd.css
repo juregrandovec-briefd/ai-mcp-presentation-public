@@ -1,10 +1,12 @@
 /**
- * Preskok & Briefd Custom Theme for reveal.js
- * A modern, professional theme incorporating Preskok Red and Briefd Green branding
+ * Claude/Anthropic Inspired Theme for reveal.js
+ * A modern, warm theme using Anthropic's color palette
  *
  * Colors:
- * - Preskok Red: #DF3B3B
- * - Briefd Green: #144b3c
+ * - Claude Orange: #d97757
+ * - Cream: #faf9f0
+ * - Dark: #131314
+ * - Warm Gray: #87867f
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
@@ -23,23 +25,31 @@ section.has-dark-background h6 {
  * GLOBAL STYLES
  *********************************************/
 :root {
-  /* Brand Colors */
-  --preskok-red: #DF3B3B;
-  --briefd-green: #144b3c;
-  --preskok-red-light: rgba(223, 59, 59, 0.1);
-  --briefd-green-light: rgba(20, 75, 60, 0.1);
-  --preskok-red-medium: rgba(223, 59, 59, 0.3);
-  --briefd-green-medium: rgba(20, 75, 60, 0.3);
+  /* Claude/Anthropic Colors */
+  --claude-orange: #d97757;
+  --claude-cream: #faf9f0;
+  --claude-dark: #131314;
+  --claude-gray: #87867f;
+  --claude-orange-light: rgba(217, 119, 87, 0.1);
+  --claude-orange-medium: rgba(217, 119, 87, 0.2);
+
+  /* Legacy color names for compatibility */
+  --preskok-red: var(--claude-orange);
+  --briefd-green: var(--claude-gray);
+  --preskok-red-light: var(--claude-orange-light);
+  --briefd-green-light: rgba(135, 134, 127, 0.1);
+  --preskok-red-medium: var(--claude-orange-medium);
+  --briefd-green-medium: rgba(135, 134, 127, 0.2);
 
   /* Base Colors */
-  --r-background-color: #ffffff;
+  --r-background-color: var(--claude-cream);
   --r-main-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   --r-main-font-size: 28px;
-  --r-main-color: #1a1a1a;
+  --r-main-color: var(--claude-dark);
   --r-block-margin: 12px;
   --r-heading-margin: 0 0 16px 0;
   --r-heading-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --r-heading-color: #0a0a0a;
+  --r-heading-color: var(--claude-dark);
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: -0.02em;
   --r-heading-text-transform: none;
@@ -57,13 +67,13 @@ section.has-dark-background h6 {
   --r-code-font: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
 
   /* Links */
-  --r-link-color: var(--preskok-red);
-  --r-link-color-dark: #b82e2e;
-  --r-link-color-hover: #c53434;
+  --r-link-color: var(--claude-orange);
+  --r-link-color-dark: #b85d42;
+  --r-link-color-hover: #e89579;
 
   /* Selection */
-  --r-selection-background-color: var(--preskok-red-medium);
-  --r-selection-color: #000;
+  --r-selection-background-color: var(--claude-orange-medium);
+  --r-selection-color: var(--claude-dark);
 
   /* Overlays */
   --r-overlay-element-bg-color: 0, 0, 0;
@@ -125,17 +135,16 @@ section.has-dark-background h6 {
 .reveal h1 {
   font-size: var(--r-heading1-size);
   font-weight: 800;
-  color: var(--preskok-red);
+  color: var(--claude-orange);
   margin-bottom: 20px;
 }
 
 .reveal h2 {
   font-size: var(--r-heading2-size);
   font-weight: 700;
-  color: var(--preskok-red);
+  color: var(--claude-orange);
   margin-bottom: 16px;
   padding-bottom: 8px;
-  border-bottom: 2px solid var(--briefd-green);
   display: inline-block;
   min-width: 40%;
 }
@@ -143,7 +152,7 @@ section.has-dark-background h6 {
 .reveal h3 {
   font-size: var(--r-heading3-size);
   font-weight: 600;
-  color: var(--briefd-green);
+  color: var(--claude-dark);
   margin-bottom: 12px;
 }
 
@@ -183,12 +192,12 @@ section.has-dark-background h6 {
 .reveal strong,
 .reveal b {
   font-weight: 700;
-  color: var(--preskok-red);
+  color: var(--claude-orange);
 }
 
 .reveal em {
   font-style: italic;
-  color: var(--briefd-green);
+  color: var(--claude-gray);
 }
 
 .reveal ol,
@@ -239,9 +248,10 @@ section.has-dark-background h6 {
   margin: var(--r-block-margin) auto;
   padding: 20px 30px;
   font-style: italic;
-  background: var(--preskok-red-light);
-  border-left: 5px solid var(--preskok-red);
-  border-radius: 4px;
+  background: var(--claude-orange-light);
+  border-radius: 8px;
+  box-shadow: 0 3px 14px rgba(217, 119, 87, 0.15),
+              0 1px 6px rgba(0, 0, 0, 0.08);
 }
 
 .reveal blockquote p:first-child,
@@ -266,9 +276,9 @@ section.has-dark-background h6 {
   background: #1e1e1e;
   color: #d4d4d4;
   border-radius: 8px;
-  border-top: 3px solid var(--preskok-red);
-  border-bottom: 3px solid var(--briefd-green);
   overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25),
+              0 2px 8px rgba(217, 119, 87, 0.15);
 }
 
 .reveal code {
@@ -278,7 +288,7 @@ section.has-dark-background h6 {
   background: #f5f5f5;
   padding: 2px 8px;
   border-radius: 4px;
-  color: var(--preskok-red);
+  color: var(--claude-orange);
   font-size: 0.9em;
   font-weight: 500;
 }
@@ -311,10 +321,11 @@ section.has-dark-background h6 {
 
 .reveal table th {
   font-weight: 700;
-  background: var(--preskok-red);
+  background: var(--claude-orange);
   color: white;
   padding: 8px 12px;
-  border: 2px solid var(--preskok-red);
+  border: none;
+  box-shadow: 0 2px 8px rgba(217, 119, 87, 0.2);
 }
 
 .reveal table td {
@@ -342,7 +353,7 @@ section.has-dark-background h6 {
 }
 
 .reveal table tbody tr:hover {
-  background: var(--preskok-red-light);
+  background: var(--claude-orange-light);
 }
 
 .reveal sup {
@@ -400,65 +411,62 @@ section.has-dark-background h6 {
 
 /* Slide borders with brand colors */
 .reveal .slides section {
-  border-top: 3px solid var(--preskok-red);
-  border-bottom: 3px solid var(--briefd-green);
-  border-left: 1px solid rgba(223, 59, 59, 0.2);
-  border-right: 1px solid rgba(20, 75, 60, 0.2);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 25px 40px !important;
   box-sizing: border-box;
-  background: linear-gradient(to bottom right, rgba(255,255,255,0.95), rgba(250,250,250,0.95));
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08),
+              0 1px 4px rgba(0, 0, 0, 0.04);
 }
 
 /* Section headers */
 .section-header {
-  background: var(--preskok-red-light);
+  background: rgba(255, 255, 255, 0.8);
   padding: 25px 20px;
   text-align: center;
-  border-radius: 8px;
-  border: 2px solid var(--preskok-red);
+  border-radius: 12px;
   position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1),
+              0 2px 8px rgba(217, 119, 87, 0.15);
 }
 
 /* Highlight box */
 .highlight-box {
-  background: var(--preskok-red-light);
-  border-left: 3px solid var(--preskok-red);
-  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
   padding: 12px 16px;
   margin: 12px 0;
   box-sizing: border-box;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08),
+              0 1px 4px rgba(217, 119, 87, 0.1);
 }
 
 /* Stats box */
 .stats-box {
-  background: white;
-  border: 2px solid var(--preskok-red);
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
   padding: 16px;
   text-align: center;
   box-sizing: border-box;
-  box-shadow: 0 4px 16px rgba(223, 59, 59, 0.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1),
+              0 2px 6px rgba(217, 119, 87, 0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .stats-box:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(223, 59, 59, 0.25);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15),
+              0 4px 12px rgba(217, 119, 87, 0.25);
 }
 
 .stats-box h3 {
-  color: var(--preskok-red);
+  color: var(--claude-orange);
   margin-bottom: 8px;
 }
 
 /* Code box */
 .code-box {
   background: #1e1e1e;
-  border-top: 2px solid var(--preskok-red);
-  border-bottom: 2px solid var(--briefd-green);
   padding: 12px 16px;
   border-radius: 6px;
   font-family: var(--r-code-font);
@@ -466,7 +474,8 @@ section.has-dark-background h6 {
   color: #4AF626;
   overflow-x: auto;
   box-sizing: border-box;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3),
+              0 2px 8px rgba(217, 119, 87, 0.2);
 }
 
 .code-box code {
@@ -478,11 +487,12 @@ section.has-dark-background h6 {
 /* Warning box */
 .warning-box {
   background: rgba(255, 193, 7, 0.1);
-  border-left: 3px solid #ff9800;
   border-radius: 6px;
   padding: 12px 16px;
   margin: 12px 0;
   box-sizing: border-box;
+  box-shadow: 0 2px 12px rgba(255, 152, 0, 0.15),
+              0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
 .warning-box::before {
@@ -493,13 +503,13 @@ section.has-dark-background h6 {
 
 /* MCP box */
 .mcp-box {
-  background: var(--preskok-red-light);
-  border: 2px solid var(--preskok-red);
+  background: var(--claude-orange-light);
   border-radius: 6px;
   padding: 12px 16px;
   margin: 12px 0;
   box-sizing: border-box;
-  box-shadow: 0 2px 8px rgba(223, 59, 59, 0.1);
+  box-shadow: 0 3px 14px rgba(217, 119, 87, 0.15),
+              0 1px 6px rgba(0, 0, 0, 0.08);
 }
 
 /* Grid layouts */
@@ -544,9 +554,8 @@ section.has-dark-background h6 {
   background: rgba(255, 255, 255, 0.98);
   padding: 8px 16px;
   border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  border-top: 2px solid var(--preskok-red);
-  border-bottom: 2px solid var(--briefd-green);
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12),
+              0 1px 6px rgba(217, 119, 87, 0.15);
 }
 
 /* Brand footer */
@@ -556,7 +565,7 @@ section.has-dark-background h6 {
   left: 0;
   right: 0;
   height: 4px;
-  background: var(--preskok-red);
+  background: var(--claude-orange);
   z-index: 100;
   pointer-events: none;
 }
@@ -582,7 +591,7 @@ section.has-dark-background h6 {
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: var(--preskok-red);
+  color: var(--claude-orange);
 }
 
 /*********************************************
@@ -590,12 +599,12 @@ section.has-dark-background h6 {
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.1);
-  color: var(--preskok-red);
+  color: var(--claude-orange);
   height: 4px;
 }
 
 .reveal .progress span {
-  background: var(--preskok-red);
+  background: var(--claude-orange);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
 }
 
