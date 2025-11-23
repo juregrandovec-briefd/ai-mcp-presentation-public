@@ -35,32 +35,22 @@
                 <div class="two-column" style="margin-top: 30px;">
                     <div class="highlight-box" style="padding: 30px;">
                         <h3>🤝 AI Assistants</h3>
-                        <p style="font-size: 0.9em; margin-top: 15px; font-style: italic;">"I'll help you write that"</p>
-                        <ul style="font-size: 0.95em; margin-top: 20px; line-height: 1.7;">
+                        <ul style="font-size: 1em; margin-top: 25px; line-height: 1.8;">
                             <li><strong>Suggest</strong> code completions</li>
                             <li><strong>Answer</strong> questions about code</li>
-                            <li><strong>Help</strong> you write implementations</li>
                             <li>You execute everything manually</li>
-                            <li>No memory between sessions</li>
                         </ul>
-                        <p style="margin-top: 20px; font-size: 0.85em; color: #666;"><strong>Examples:</strong> GitHub Copilot, ChatGPT</p>
+                        <p style="margin-top: 25px; font-size: 0.9em; color: #666;"><strong>Examples:</strong> GitHub Copilot, ChatGPT</p>
                     </div>
                     <div class="mcp-box" style="padding: 30px;">
                         <h3>🤖 AI Agents</h3>
-                        <p style="font-size: 0.9em; margin-top: 15px; font-style: italic;">"I'll do that task for you"</p>
-                        <ul style="font-size: 0.95em; margin-top: 20px; line-height: 1.7;">
+                        <ul style="font-size: 1em; margin-top: 25px; line-height: 1.8;">
                             <li><strong>Execute</strong> complete workflows</li>
                             <li><strong>Make</strong> file changes directly</li>
                             <li><strong>Run</strong> tests and fix errors</li>
-                            <li>You approve each action</li>
-                            <li>Learns from your codebase</li>
                         </ul>
-                        <p style="margin-top: 20px; font-size: 0.85em; color: #666;"><strong>Examples:</strong> Claude Code, Cursor, Windsurf</p>
+                        <p style="margin-top: 25px; font-size: 0.9em; color: #666;"><strong>Examples:</strong> Claude Code, Cursor, Windsurf</p>
                     </div>
-                </div>
-
-                <div class="highlight-box" style="margin-top: 30px; max-width: 900px; margin-left: auto; margin-right: auto; padding: 25px; text-align: center;">
-                    <p style="font-size: 1.1em;"><strong>The shift:</strong> From "help me write this function" → "fix bug #234 and create a PR"</p>
                 </div>
 
                 <aside class="notes">
@@ -144,29 +134,26 @@
                     <div>
                         <div class="highlight-box" style="padding: 25px; margin-bottom: 15px;">
                             <h3>🔄 Reset Sessions Often</h3>
-                            <ul style="font-size: 0.85em; margin-top: 12px; line-height: 1.7;">
+                            <ul style="font-size: 0.9em; margin-top: 12px; line-height: 1.8;">
                                 <li>Start fresh between different tasks</li>
                                 <li>Avoids unnecessary memory accumulation</li>
                                 <li>Prevents context contamination</li>
-                                <li>Keeps responses focused and accurate</li>
                             </ul>
                         </div>
                         <div class="mcp-box" style="padding: 25px; margin-bottom: 15px;">
                             <h3>📝 Write Descriptive Initial Prompts</h3>
-                            <ul style="font-size: 0.85em; margin-top: 12px; line-height: 1.7;">
+                            <ul style="font-size: 0.9em; margin-top: 12px; line-height: 1.8;">
                                 <li>Include <strong>context:</strong> what, where, why</li>
                                 <li>Reference <strong>specific files</strong> and patterns</li>
                                 <li>Share <strong>full error messages</strong> if debugging</li>
-                                <li>Set <strong>clear boundaries</strong> and constraints</li>
                             </ul>
                         </div>
                         <div class="highlight-box" style="padding: 25px;">
                             <h3>🎯 Use Planning Mode First</h3>
-                            <ul style="font-size: 0.85em; margin-top: 12px; line-height: 1.7;">
+                            <ul style="font-size: 0.9em; margin-top: 12px; line-height: 1.8;">
                                 <li><strong>Always start</strong> with planning mode for new tickets</li>
                                 <li><strong>Review the plan</strong> carefully before coding</li>
                                 <li><strong>Refine iteratively</strong> until plan is solid</li>
-                                <li>Better planning = better implementation</li>
                             </ul>
                         </div>
                     </div>
@@ -183,57 +170,60 @@
                 </aside>
             </section>
 
-            <!-- SLIDE: Case Study - E-invoices Fiscalization 2.0 -->
+            <!-- SLIDE: Case Study Part 1 - The Challenge & Approach -->
             <section>
                 <h2>Case Study: E-invoices Fiscalization 2.0 for Croatia</h2>
-                <p style="font-size: 0.9em; margin-top: 15px; color: #666;">Building a complex fiscalization system with Claude Code over 2+ months</p>
+                <p style="font-size: 0.95em; margin-top: 15px; color: #666;">Building a complex fiscalization system with Claude Code over 2+ months</p>
 
-                <div class="two-column" style="margin-top: 25px; gap: 20px;">
-                    <div>
-                        <div class="highlight-box" style="padding: 20px; margin-bottom: 15px;">
-                            <h3>🎯 The Challenge</h3>
-                            <p style="font-size: 0.85em; margin-top: 10px; line-height: 1.6;">
-                                Build complete e-invoicing fiscalization system for Croatian regulations - complex documentation, multiple integrations, strict format requirements. 3rd party system still in development required ongoing alignment.
-                            </p>
-                        </div>
-                        <div class="mcp-box" style="padding: 20px;">
-                            <h3>🤖 What Claude Code Did</h3>
-                            <ul style="font-size: 0.75em; margin-top: 10px; line-height: 1.5;">
-                                <li><strong>Researched internet</strong> for government regulations & documentation</li>
-                                <li><strong>Read all documentation</strong> (including images)</li>
-                                <li><strong>Built entire business logic</strong> for invoice processing</li>
-                                <li><strong>Created all API endpoints</strong> and status management</li>
-                                <li><strong>Automated file handling:</strong> Download WSDL zip, unzip to storage/</li>
-                                <li><strong>Converted invoices to UBL 2.1 format</strong> with minimal errors</li>
-                                <li><strong>Wrote comprehensive tests</strong> for the system</li>
-                                <li><strong>Validated all logic</strong> against requirements</li>
-                            </ul>
-                        </div>
+                <div class="two-column" style="margin-top: 30px; gap: 25px;">
+                    <div class="highlight-box" style="padding: 30px;">
+                        <h3>🎯 The Challenge</h3>
+                        <p style="font-size: 0.9em; margin-top: 15px; line-height: 1.7;">
+                            Build complete e-invoicing fiscalization system for Croatian regulations - complex documentation, multiple integrations, strict format requirements. 3rd party system still in development required ongoing alignment.
+                        </p>
                     </div>
-                    <div>
-                        <div class="highlight-box" style="padding: 20px; margin-bottom: 15px;">
-                            <h3>💡 Key Insights</h3>
-                            <ul style="font-size: 0.8em; margin-top: 10px; line-height: 1.6;">
-                                <li><strong>Documentation understanding:</strong> Claude parsed technical specs and diagrams</li>
-                                <li><strong>Integration context:</strong> Understood existing workflow and integration points</li>
-                                <li><strong>Complex transformations:</strong> Invoice to UBL 2.1 format conversion</li>
-                                <li><strong>Did the heavy lifting:</strong> Handled majority of work, required refinements</li>
-                            </ul>
-                        </div>
-                        <div class="mcp-box" style="padding: 20px;">
-                            <h3>📈 Lessons Learned</h3>
-                            <ul style="font-size: 0.8em; margin-top: 10px; line-height: 1.6;">
-                                <li><strong>Use planning mode from day 1:</strong> Would have reduced prompting significantly</li>
-                                <li><strong>Better upfront planning = less iteration:</strong> Experience matters</li>
-                                <li><strong>Let Claude read everything:</strong> Documentation, diagrams, existing code</li>
-                                <li><strong>Results: Insane</strong> - Complex system built faster than traditional approach</li>
-                            </ul>
-                        </div>
+                    <div class="mcp-box" style="padding: 30px;">
+                        <h3>🤖 What Claude Code Did</h3>
+                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
+                            <li><strong>Researched</strong> government regulations & documentation</li>
+                            <li><strong>Built entire business logic</strong> for invoice processing</li>
+                            <li><strong>Converted invoices to UBL 2.1 format</strong></li>
+                            <li><strong>Created API endpoints</strong> and comprehensive tests</li>
+                        </ul>
                     </div>
                 </div>
 
                 <aside class="notes">
-                    Real project: E-invoices Fiscalization 2.0 for Croatia. Claude read all docs and images, built logic, endpoints, file handling, converted to UBL format, wrote tests. Lesson: use planning mode from the start for even better results.
+                    Real project: E-invoices Fiscalization 2.0 for Croatia. Claude researched government docs, built the business logic, handled format conversions, and created all the API endpoints with tests.
+                </aside>
+            </section>
+
+            <!-- SLIDE: Case Study Part 2 - Results & Lessons -->
+            <section>
+                <h2>Case Study Results & Lessons</h2>
+                <p style="font-size: 0.95em; margin-top: 15px; color: #666;">What we learned building this fiscalization system</p>
+
+                <div style="margin-top: 30px;">
+                    <div class="highlight-box" style="padding: 30px; margin-bottom: 20px;">
+                        <h3>💡 Key Insights & Results</h3>
+                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
+                            <li><strong>Documentation understanding:</strong> Claude parsed technical specs and diagrams</li>
+                            <li><strong>Integration context:</strong> Understood existing workflow seamlessly</li>
+                            <li><strong>Complex system built faster</strong> than traditional approach</li>
+                        </ul>
+                    </div>
+                    <div class="mcp-box" style="padding: 30px;">
+                        <h3>📈 Lessons Learned</h3>
+                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
+                            <li><strong>Use planning mode from day 1</strong> - reduces iteration significantly</li>
+                            <li><strong>Better upfront planning = less iteration</strong></li>
+                            <li><strong>Let Claude read everything:</strong> docs, diagrams, existing code</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    Key takeaways: Claude handled documentation and complex transformations. Biggest lesson: use planning mode from the start. Let the agent read all available context upfront for better results.
                 </aside>
             </section>
 
@@ -330,7 +320,7 @@
 
                 <div class="highlight-box" style="margin-top: 30px; padding: 30px;">
                     <h3>Installation & Configuration</h3>
-                    <p style="font-size: 0.9em; margin-top: 15px; line-height: 1.7;">
+                    <p style="font-size: 0.95em; margin-top: 15px; line-height: 1.7;">
                         MCPs are configured in your Claude Desktop or Claude Code settings. Each MCP needs permissions and sometimes API keys.
                     </p>
                 </div>
@@ -338,15 +328,12 @@
                 <div class="two-column" style="margin-top: 35px;">
                     <div>
                         <h3>Example: GitHub MCP</h3>
-                        <div class="code-box" style="margin-top: 15px; font-size: 0.7em; padding: 20px;">
+                        <div class="code-box" style="margin-top: 15px; font-size: 0.75em; padding: 20px;">
                             {<br>
                             &nbsp;&nbsp;"mcpServers": {<br>
                             &nbsp;&nbsp;&nbsp;&nbsp;"github": {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"command": "npx",<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"args": ["-y", "@modelcontextprotocol/server-github"],<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"env": {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"GITHUB_TOKEN": "ghp_..."<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"command": "npx ...",<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"env": { "GITHUB_TOKEN": "..." }<br>
                             &nbsp;&nbsp;&nbsp;&nbsp;}<br>
                             &nbsp;&nbsp;}<br>
                             }
@@ -354,16 +341,14 @@
                     </div>
                     <div>
                         <h3>What You Can Do:</h3>
-                        <ul style="font-size: 0.9em; line-height: 1.8; margin-top: 15px;">
+                        <ul style="font-size: 1em; line-height: 1.9; margin-top: 15px;">
                             <li><strong>Read:</strong> "Show me issue #234"</li>
-                            <li><strong>Search:</strong> "Find files using Stripe API"</li>
                             <li><strong>Create:</strong> "Make a PR for this fix"</li>
-                            <li><strong>Update:</strong> "Add comment to PR #45"</li>
                             <li><strong>Analyze:</strong> "Review recent commits"</li>
                         </ul>
-                        <div class="warning-box" style="margin-top: 20px; padding: 15px; font-size: 0.85em;">
-                            <strong>Pro tip:</strong> Start with read-only permissions, expand later
-                        </div>
+                        <p style="margin-top: 25px; font-size: 0.9em; color: #666; font-style: italic;">
+                            Start with read-only permissions, expand later
+                        </p>
                     </div>
                 </div>
 
@@ -374,45 +359,51 @@
 
             <!-- PART 2: REAL-WORLD APPLICATION -->
 
-            <!-- SLIDE 7: AI Agent Prompting Best Practices -->
+            <!-- SLIDE 7: AI Agent Prompting Essentials -->
             <section>
-                <h2>AI Agent Prompting Best Practices</h2>
+                <h2>AI Agent Prompting Essentials</h2>
 
                 <div class="two-column" style="margin-top: 40px;">
                     <div class="mcp-box" style="padding: 35px;">
                         <h3>📝 How to Prompt Effectively</h3>
-                        <ul style="font-size: 0.95em; margin-top: 20px; line-height: 1.8;">
+                        <ul style="font-size: 1em; margin-top: 20px; line-height: 1.9;">
                             <li><strong>Be specific:</strong> "Fix validation in UserController" not "fix the bug"</li>
                             <li><strong>Set boundaries:</strong> "Only modify files in /src/auth/"</li>
-                            <li><strong>Point to files:</strong> "Check UserService.php line 234"</li>
                             <li>Share <strong>full error messages</strong> and stack traces</li>
-                            <li>Reference patterns: "Follow OrderController example"</li>
                         </ul>
                     </div>
                     <div class="highlight-box" style="padding: 35px;">
                         <h3>✅ Review & Advanced Tips</h3>
-                        <ul style="font-size: 0.95em; margin-top: 20px; line-height: 1.8;">
+                        <ul style="font-size: 1em; margin-top: 20px; line-height: 1.9;">
                             <li><strong>Always test</strong> before accepting changes</li>
-                            <li>Review diffs and understand all changes</li>
                             <li>Use <strong>CLAUDE.md</strong> for project conventions</li>
                             <li><strong>Chain tasks:</strong> "Fix bug, add test, create PR"</li>
-                            <li>Iterate - give feedback and let it improve</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="mcp-box" style="margin-top: 30px; padding: 30px; max-width: 900px; margin-left: auto; margin-right: auto;">
-                    <h3>🎯 Claude Code Specific</h3>
-                    <ul style="font-size: 0.95em; margin-top: 15px; line-height: 1.8;">
-                        <li><strong>Use Plan Mode:</strong> Let Claude think through the solution before coding</li>
-                        <li><strong>Enable thinking model:</strong> See Claude's reasoning process</li>
-                        <li><strong>Refine prompts iteratively:</strong> Start broad, then add specifics</li>
-                        <li><strong>Plan first, code later:</strong> Break down complex tasks in plan mode</li>
-                    </ul>
+                <aside class="notes">
+                    Be specific with file paths and error messages. Use CLAUDE.md for conventions. Always test and review changes before accepting. You can chain multiple tasks together.
+                </aside>
+            </section>
+
+            <!-- SLIDE: Claude Code Advanced Tips -->
+            <section>
+                <h2>Claude Code Advanced Tips</h2>
+
+                <div style="margin-top: 40px;">
+                    <div class="mcp-box" style="padding: 40px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                        <h3>🎯 Power User Features</h3>
+                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
+                            <li><strong>Use Plan Mode:</strong> Let Claude think through the solution before coding</li>
+                            <li><strong>Enable thinking model:</strong> See Claude's reasoning process</li>
+                            <li><strong>Refine prompts iteratively:</strong> Start broad, then add specifics</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <aside class="notes">
-                    Be specific with file paths and error messages. Use CLAUDE.md for conventions. For Claude Code: use plan mode first, enable thinking model, and always review changes before accepting.
+                    For Claude Code: use plan mode first to break down tasks, enable thinking model to see reasoning, and refine prompts iteratively for best results.
                 </aside>
             </section>
 
@@ -423,21 +414,17 @@
                 <div class="two-column" style="margin-top: 40px;">
                     <div class="highlight-box" style="padding: 35px;">
                         <h3>🔐 Security Essentials</h3>
-                        <ul style="font-size: 0.95em; margin-top: 20px; line-height: 1.8;">
+                        <ul style="font-size: 1em; margin-top: 20px; line-height: 1.9;">
                             <li>Start MCPs in <strong>read-only mode</strong></li>
                             <li>Use <strong>separate API keys</strong> per service</li>
                             <li>Never share <strong>.env files</strong> with agents</li>
-                            <li>Sanitize inputs - remove personal data</li>
-                            <li>Grant <strong>minimal permissions</strong> needed</li>
                         </ul>
                     </div>
                     <div class="mcp-box" style="padding: 35px;">
                         <h3>✅ Operational Best Practices</h3>
-                        <ul style="font-size: 0.95em; margin-top: 20px; line-height: 1.8;">
+                        <ul style="font-size: 1em; margin-top: 20px; line-height: 1.9;">
                             <li>Use <strong>pre-commit hooks</strong> to block secrets</li>
                             <li>Always review before approving changes</li>
-                            <li>Test in <strong>dev/staging</strong> environments first</li>
-                            <li>Track all MCP actions with git</li>
                             <li>Expand permissions <strong>gradually</strong></li>
                         </ul>
                     </div>
@@ -507,135 +494,121 @@
                 </aside>
             </section>
 
-            <!-- SLIDE: MCPs I Used -->
+            <!-- SLIDE: MCPs Part 1 - Development Tools -->
             <section>
-                <h2>MCPs: My Core Toolkit</h2>
+                <h2>MCPs: Development Tools</h2>
 
-                <div class="two-column" style="margin-top: 30px; gap: 20px;">
-                    <div>
-                        <div class="mcp-box" style="padding: 20px; margin-bottom: 15px;">
-                            <h3 style="text-align: center;">🏗️ Laravel Boost</h3>
-                            <ul style="font-size: 0.75em; margin-top: 10px; line-height: 1.5;">
-                                <li>Run Tinker & execute artisan commands</li>
-                                <li>Query database with Eloquent ORM</li>
-                                <li>Search versioned Laravel docs</li>
-                                <li>Inspect routes, migrations, models</li>
-                                <li>Access logs & configuration values</li>
-                            </ul>
-                        </div>
-                        <div class="mcp-box" style="padding: 20px;">
-                            <h3 style="text-align: center;">🅰️ Angular CLI</h3>
-                            <ul style="font-size: 0.75em; margin-top: 10px; line-height: 1.5;">
-                                <li>Generate components & services</li>
-                                <li>Search Angular.dev documentation</li>
-                                <li>Read project structure & configs</li>
-                                <li>Run build & test commands</li>
-                                <li>Generate migration guides</li>
-                            </ul>
-                        </div>
+                <div class="two-column" style="margin-top: 30px; gap: 25px;">
+                    <div class="mcp-box" style="padding: 30px;">
+                        <h3 style="text-align: center;">🏗️ Laravel Boost</h3>
+                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
+                            <li>Run Tinker & execute artisan commands</li>
+                            <li>Query database with Eloquent ORM</li>
+                            <li>Search versioned Laravel docs</li>
+                        </ul>
                     </div>
-                    <div>
-                        <div class="mcp-box" style="padding: 20px; margin-bottom: 15px;">
-                            <h3 style="text-align: center;">🐙 GitHub</h3>
-                            <ul style="font-size: 0.75em; margin-top: 10px; line-height: 1.5;">
-                                <li>Create & update pull requests</li>
-                                <li>Manage issues & comments</li>
-                                <li>Search code across repositories</li>
-                                <li>Read & write repository files</li>
-                                <li>Run code scanning & workflows</li>
-                            </ul>
-                        </div>
-                        <div class="mcp-box" style="padding: 20px;">
-                            <h3 style="text-align: center;">💬 Slack</h3>
-                            <ul style="font-size: 0.75em; margin-top: 10px; line-height: 1.5;">
-                                <li>List & search channels</li>
-                                <li>Read messages & thread replies</li>
-                                <li>Post messages to channels</li>
-                                <li>Search message history</li>
-                                <li>Schedule messages & reactions</li>
-                            </ul>
-                        </div>
+                    <div class="mcp-box" style="padding: 30px;">
+                        <h3 style="text-align: center;">🅰️ Angular CLI</h3>
+                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
+                            <li>Generate components & services</li>
+                            <li>Search Angular.dev documentation</li>
+                            <li>Read project structure & configs</li>
+                        </ul>
                     </div>
                 </div>
 
                 <aside class="notes">
-                    These 4 MCPs cover my entire workflow. Laravel Boost and Angular for development, GitHub for PRs, Slack for gathering context from team conversations. Started with just GitHub, added others as I found specific needs.
+                    Laravel Boost and Angular CLI MCPs provide framework-specific tools. Laravel Boost handles artisan commands and database queries, Angular CLI generates code and searches docs.
                 </aside>
             </section>
 
-            <!-- SLIDE: .MD Context Files -->
+            <!-- SLIDE: MCPs Part 2 - Integration Tools -->
             <section>
-                <h2>.MD Context Files for Claude</h2>
-                <p style="font-size: 1em; margin-top: 15px; color: #666;">The secret to consistent AI behavior</p>
+                <h2>MCPs: Integration Tools</h2>
 
-                <div class="two-column" style="margin-top: 20px; gap: 15px;">
-                    <div>
-                        <div class="highlight-box" style="padding: 18px; margin-bottom: 12px;">
-                            <h3>📄 CLAUDE.md (Project Root)</h3>
-                            <ul style="font-size: 0.75em; margin-top: 8px; line-height: 1.5;">
-                                <li>Project-specific conventions & patterns</li>
-                                <li>Testing commands & environments</li>
-                                <li>Architecture decisions & file structure</li>
-                                <li>Common gotchas & workarounds</li>
-                            </ul>
-                            <div class="code-box" style="margin-top: 8px; font-size: 0.6em;">
-                                # CLAUDE.md<br>
-                                - Use php artisan test --env=testing-local<br>
-                                - Follow OrderController pattern for new APIs
-                            </div>
-                        </div>
-                        <div class="mcp-box" style="padding: 18px;">
-                            <h3>🌐 ~/.claude/init/ (Global)</h3>
-                            <ul style="font-size: 0.75em; margin-top: 8px; line-height: 1.5;">
-                                <li>Company-wide coding standards</li>
-                                <li>Team best practices</li>
-                                <li>Security rules & policies</li>
-                                <li>Loaded for every project</li>
-                            </ul>
-                            <div class="code-box" style="margin-top: 8px; font-size: 0.6em;">
-                                ~/.claude/init/company-rules.md<br>
-                                ~/.claude/init/security-policy.md
-                            </div>
-                        </div>
+                <div class="two-column" style="margin-top: 30px; gap: 25px;">
+                    <div class="mcp-box" style="padding: 30px;">
+                        <h3 style="text-align: center;">🐙 GitHub</h3>
+                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
+                            <li>Create & update pull requests</li>
+                            <li>Manage issues & comments</li>
+                            <li>Search code across repositories</li>
+                        </ul>
                     </div>
-                    <div>
-                        <div class="mcp-box" style="padding: 18px; margin-bottom: 12px;">
-                            <h3>⚡ Custom Commands (.claude/commands/)</h3>
-                            <ul style="font-size: 0.75em; margin-top: 8px; line-height: 1.5;">
-                                <li>Reusable prompt templates</li>
-                                <li>Invoke with <code>/command-name</code></li>
-                                <li>Great for repetitive tasks</li>
-                                <li>Share across team via git</li>
-                            </ul>
-                            <div class="code-box" style="margin-top: 8px; font-size: 0.6em;">
-                                .claude/commands/review.md<br>
-                                .claude/commands/test-feature.md<br><br>
-                                Usage: /review or /test-feature
-                            </div>
-                        </div>
-                        <div class="highlight-box" style="padding: 18px;">
-                            <h3>📁 docs/ai-context/ (Feature Context)</h3>
-                            <ul style="font-size: 0.75em; margin-top: 8px; line-height: 1.5;">
-                                <li>Deep context per feature/module</li>
-                                <li>Business logic explanations</li>
-                                <li>Integration patterns & dependencies</li>
-                                <li>Reference when needed</li>
-                            </ul>
-                            <div class="code-box" style="margin-top: 8px; font-size: 0.6em;">
-                                docs/ai-context/payments.md<br>
-                                docs/ai-context/auth-flow.md<br>
-                                docs/ai-context/email-queue.md
-                            </div>
-                        </div>
+                    <div class="mcp-box" style="padding: 30px;">
+                        <h3 style="text-align: center;">💬 Slack</h3>
+                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
+                            <li>Read messages & thread replies</li>
+                            <li>Post messages to channels</li>
+                            <li>Search message history</li>
+                        </ul>
                     </div>
-                </div>
-
-                <div class="warning-box" style="margin-top: 15px; padding: 15px; max-width: 900px; margin-left: auto; margin-right: auto;">
-                    <p style="font-size: 0.85em;"><strong>💡 Pro tip:</strong> Start with CLAUDE.md in your project root. Add testing commands, common patterns, and architecture notes. Claude reads it automatically - no need to paste context every time!</p>
                 </div>
 
                 <aside class="notes">
-                    Most underrated feature: .MD files that Claude auto-reads. CLAUDE.md for project rules, ~/.claude/init/ for company standards, .claude/commands/ for reusable prompts. Write conventions once, Claude follows forever.
+                    GitHub MCP handles pull requests and code search. Slack MCP gathers context from team conversations. Started with just GitHub, added others as I found specific needs.
+                </aside>
+            </section>
+
+            <!-- SLIDE: .MD Context Files - Project Context -->
+            <section>
+                <h2>.MD Context Files: Project Context</h2>
+                <p style="font-size: 1em; margin-top: 15px; color: #666;">Claude reads these automatically - write conventions once</p>
+
+                <div class="two-column" style="margin-top: 30px; gap: 25px;">
+                    <div class="highlight-box" style="padding: 30px;">
+                        <h3>📄 CLAUDE.md (Project Root)</h3>
+                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
+                            <li>Project-specific conventions & patterns</li>
+                            <li>Testing commands & environments</li>
+                            <li>Architecture decisions & file structure</li>
+                        </ul>
+                    </div>
+                    <div class="mcp-box" style="padding: 30px;">
+                        <h3>🌐 ~/.claude/init/ (Global)</h3>
+                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
+                            <li>Company-wide coding standards</li>
+                            <li>Team best practices</li>
+                            <li>Security rules & policies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    Most underrated feature: .MD files that Claude auto-reads. CLAUDE.md for project rules, ~/.claude/init/ for company standards. Write conventions once, Claude follows forever.
+                </aside>
+            </section>
+
+            <!-- SLIDE: .MD Context Files - Team Workflows -->
+            <section>
+                <h2>.MD Context Files: Team Workflows</h2>
+                <p style="font-size: 1em; margin-top: 15px; color: #666;">Reusable prompts and deep feature context</p>
+
+                <div class="two-column" style="margin-top: 30px; gap: 25px;">
+                    <div class="mcp-box" style="padding: 30px;">
+                        <h3>⚡ Custom Commands</h3>
+                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
+                            <li>Reusable prompt templates</li>
+                            <li>Invoke with <code>/command-name</code></li>
+                            <li>Share across team via git</li>
+                        </ul>
+                        <div class="code-box" style="margin-top: 15px; font-size: 0.75em; padding: 15px;">
+                            .claude/commands/review.md<br>
+                            Usage: /review
+                        </div>
+                    </div>
+                    <div class="highlight-box" style="padding: 30px;">
+                        <h3>📁 docs/ai-context/</h3>
+                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
+                            <li>Deep context per feature/module</li>
+                            <li>Business logic explanations</li>
+                            <li>Integration patterns & dependencies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    .claude/commands/ for reusable prompts like /review or /test-feature. docs/ai-context/ for deep feature documentation. Both help maintain consistent AI behavior across the team.
                 </aside>
             </section>
 
@@ -697,22 +670,19 @@
                 <div style="margin-top: 40px;">
                     <div class="mcp-box" style="padding: 30px; margin-bottom: 20px;">
                         <h3>🔍 Why Code Review Is Critical</h3>
-                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
+                        <ul style="font-size: 1em; margin-top: 15px; line-height: 1.9;">
                             <li>Agents can generate working code that violates your architecture patterns</li>
-                            <li>Security vulnerabilities require human review (SQL injection, XSS, auth bypasses)</li>
-                            <li>Performance implications aren't obvious to AI (N+1 queries, memory leaks)</li>
-                            <li>Business logic edge cases need domain expertise</li>
+                            <li>Security vulnerabilities require human review</li>
                             <li><strong>You're approving entire workflows, not just lines of code</strong></li>
                         </ul>
                     </div>
 
                     <div class="highlight-box" style="padding: 30px;">
                         <h3>🎯 Why Project Knowledge Enables Better Prompting</h3>
-                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
+                        <ul style="font-size: 1em; margin-top: 15px; line-height: 1.9;">
                             <li>You know what to ask for: "Follow the pattern in OrderController"</li>
                             <li>You spot mistakes faster: "This breaks our caching strategy"</li>
                             <li>You set boundaries: "Only modify files in /src/features/payments"</li>
-                            <li>You reference specifics: "Check UserService.php line 234"</li>
                         </ul>
                     </div>
                 </div>
