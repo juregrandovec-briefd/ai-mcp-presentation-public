@@ -226,36 +226,6 @@
                 </aside>
             </section>
 
-            <!-- SLIDE: E-invoices Demo -->
-            <section>
-                <h2>Explaining & Researching Features</h2>
-
-                <div class="three-column" style="margin-top: 30px; align-items: center;">
-                    <!-- Video First Column -->
-                    <div style="text-align: center;">
-                        <video autoplay loop muted playsinline controls style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                            <source src="img/4/1.mov" type="video/mp4">
-                            <source src="img/4/1.mov" type="video/quicktime">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-
-                    <!-- Image Second Column -->
-                    <div style="text-align: center;">
-                        <img src="img/4/Screenshot 2025-11-21 at 06.12.27.png" alt="E-invoices Implementation" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    </div>
-
-                    <!-- Image Third Column -->
-                    <div style="text-align: center;">
-                        <img src="img/4/Screenshot 2025-11-21 at 06.12.39.png" alt="E-invoices Integration" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    </div>
-                </div>
-
-                <aside class="notes">
-                    Visual walkthrough of the E-invoices system. Video shows the workflow, screenshots demonstrate the integration and implementation details.
-                </aside>
-            </section>
-
             <!-- SLIDE 7: What is MCP? -->
             <section>
                 <h2>Model Context Protocol (MCP)</h2>
@@ -341,83 +311,24 @@
 
             <!-- PART 2: REAL-WORLD APPLICATION -->
 
-            <!-- SLIDE 7: AI Agent Prompting Essentials -->
+            <!-- SLIDE: Safety & Security Best Practices -->
             <section>
-                <h2>AI Agent Prompting Essentials</h2>
+                <h2>Safety & Security Best Practices</h2>
 
-                <div class="two-column" style="margin-top: 40px;">
-                    <div class="mcp-box" style="padding: 35px;">
-                        <h3>📝 How to Prompt Effectively</h3>
-                        <ul style="font-size: 1em; margin-top: 20px; line-height: 1.9;">
-                            <li><strong>Be specific:</strong> "Fix validation in UserController" not "fix the bug"</li>
-                            <li><strong>Set boundaries:</strong> "Only modify files in /src/auth/"</li>
-                            <li>Share <strong>full error messages</strong> and stack traces</li>
-                        </ul>
-                    </div>
-                    <div class="highlight-box" style="padding: 35px;">
-                        <h3>✅ Review & Advanced Tips</h3>
-                        <ul style="font-size: 1em; margin-top: 20px; line-height: 1.9;">
-                            <li><strong>Always test</strong> before accepting changes</li>
-                            <li>Use <strong>CLAUDE.md</strong> for project conventions</li>
-                            <li><strong>Chain tasks:</strong> "Fix bug, add test, create PR"</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <aside class="notes">
-                    Be specific with file paths and error messages. Use CLAUDE.md for conventions. Always test and review changes before accepting. You can chain multiple tasks together.
-                </aside>
-            </section>
-
-            <!-- SLIDE: Claude Code Advanced Tips -->
-            <section>
-                <h2>Claude Code Advanced Tips</h2>
-
-                <div style="margin-top: 40px;">
-                    <div class="mcp-box" style="padding: 40px; max-width: 900px; margin-left: auto; margin-right: auto;">
-                        <h3>🎯 Power User Features</h3>
-                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
-                            <li><strong>Use Plan Mode:</strong> Let Claude think through the solution before coding</li>
-                            <li><strong>Enable thinking model:</strong> See Claude's reasoning process</li>
-                            <li><strong>Refine prompts iteratively:</strong> Start broad, then add specifics</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <aside class="notes">
-                    For Claude Code: use plan mode first to break down tasks, enable thinking model to see reasoning, and refine prompts iteratively for best results.
-                </aside>
-            </section>
-
-            <!-- SLIDE: MCP Safety -->
-            <section>
-                <h2>MCP Safety</h2>
-
-                <div style="margin-top: 50px;">
-                    <div class="mcp-box" style="padding: 40px; max-width: 800px; margin: 0 auto;">
-                        <h3>🔐 Keep MCPs Secure</h3>
-                        <ul style="font-size: 1.1em; margin-top: 25px; line-height: 2;">
+                <div class="two-column" style="margin-top: 40px; gap: 25px;">
+                    <div class="mcp-box" style="padding: 30px;">
+                        <h3>🔐 MCP Security</h3>
+                        <ul style="font-size: 0.95em; margin-top: 20px; line-height: 1.9;">
                             <li>Start in <strong>read-only mode</strong></li>
                             <li>Use <strong>separate API keys</strong> per service</li>
                             <li>Expand permissions <strong>gradually</strong></li>
                         </ul>
                     </div>
-                </div>
 
-                <aside class="notes">
-                    MCP safety: start read-only, use separate API keys for each service, and expand permissions gradually as you build trust.
-                </aside>
-            </section>
-
-            <!-- SLIDE: Claude Code Safety -->
-            <section>
-                <h2>Claude Code Safety</h2>
-
-                <div style="margin-top: 50px;">
-                    <div class="highlight-box" style="padding: 40px; max-width: 800px; margin: 0 auto;">
-                        <h3>✅ Review Everything</h3>
-                        <ul style="font-size: 1.1em; margin-top: 25px; line-height: 2;">
-                            <li><strong>Review code</strong> before accepting changes</li>
+                    <div class="highlight-box" style="padding: 30px;">
+                        <h3>✅ Code Review</h3>
+                        <ul style="font-size: 0.95em; margin-top: 20px; line-height: 1.9;">
+                            <li><strong>Review code</strong> before accepting</li>
                             <li>Use <strong>pre-commit hooks</strong> to block secrets</li>
                             <li>Never share <strong>.env files</strong> with AI</li>
                         </ul>
@@ -425,25 +336,11 @@
                 </div>
 
                 <aside class="notes">
-                    Claude Code safety: always review changes before accepting, use pre-commit hooks to prevent secrets from being committed, and never share environment files with AI.
+                    Safety essentials: Start MCPs read-only with separate API keys. Always review code before accepting. Use pre-commit hooks to prevent secrets. Never share environment files with AI.
                 </aside>
             </section>
             <!-- PART 3: WHAT DID I USE -->
 
-
-            <!-- SLIDE: Claude Code -->
-            <section>
-                <h2>Claude Code</h2>
-                <p style="font-size: 1em; margin-top: 20px; color: #666;">Terminal-based AI agent</p>
-
-                <div style="margin-top: 50px; text-align: center;">
-                    <img src="https://cdn.sanity.io/images/7rhhj7zk/production/7fc76aadb52e801b6d4d46f6f33d211ffb3ad415-800x450.gif?w=800&auto=format" alt="Claude Code in action" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                </div>
-
-                <aside class="notes">
-                    Claude Code is my daily driver. Terminal-based, fast, integrates with my existing workflow. This is where I spend 80% of my AI-assisted coding time.
-                </aside>
-            </section>
 
             <!-- SLIDE: Claude Desktop -->
             <section>
@@ -603,34 +500,6 @@
 
                 <aside class="notes">
                     Most underrated feature: .MD files Claude auto-reads. CLAUDE.md for project rules, ~/.claude/init/ for company standards, .claude/commands/ for reusable prompts, docs/ai-context/ for deep feature context. Write once, Claude follows forever.
-                </aside>
-            </section>
-
-            <!-- FINDING 1: Developer Workload Shift -->
-            <section>
-                <h2>Finding #1: Less Coding, More Thinking</h2>
-
-                <div class="two-column" style="margin-top: 50px;">
-                    <div class="mcp-box" style="padding: 35px;">
-                        <h3>🔄 Before AI Agents</h3>
-                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
-                            <li>Writing boilerplate & typing code</li>
-                            <li>Manual debugging and fixing</li>
-                            <li>Limited planning time</li>
-                        </ul>
-                    </div>
-                    <div class="highlight-box" style="padding: 35px;">
-                        <h3>🚀 With AI Agents</h3>
-                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
-                            <li>Planning in plan mode first</li>
-                            <li>Reviewing agent output carefully</li>
-                            <li>Making architectural decisions</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <aside class="notes">
-                    AI handles mechanical coding, developers focus on thinking and architecture. The role shifts from "code writer" to "solution architect and quality guardian."
                 </aside>
             </section>
 
@@ -795,38 +664,21 @@
 
             <!-- SLIDE: The Future -->
             <section>
-                <h2>The Future: Developers as Orchestrators</h2>
+                <h2>The Multi-Agent Future</h2>
 
-                <div class="two-column" style="margin-top: 50px;">
-                    <div class="mcp-box" style="padding: 35px;">
-                        <h3>🤖 Agents Automate</h3>
-                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
-                            <li>Write tests & documentation</li>
-                            <li>Review PRs for patterns & security</li>
-                            <li>Read massive codebases</li>
+                <div style="margin-top: 60px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                    <div class="warning-box" style="padding: 45px;">
+                        <h3 style="margin-bottom: 25px; font-size: 1.3em;">⚡ What's Coming</h3>
+                        <ul style="font-size: 1.15em; line-height: 2.2;">
+                            <li><strong>claude.ai/code:</strong> Cloud-based agents, work from any device</li>
+                            <li><strong>Multiple agents in parallel:</strong> One writes tests, another docs, another reviews</li>
+                            <li><strong>Your role shifts:</strong> Orchestrate AI agents instead of writing every line</li>
                         </ul>
                     </div>
-                    <div class="highlight-box" style="padding: 35px;">
-                        <h3>👨‍💻 Developers Orchestrate</h3>
-                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
-                            <li>Review & validate output</li>
-                            <li>Write clear prompts</li>
-                            <li>Make architectural decisions</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="warning-box" style="margin-top: 50px; padding: 35px;">
-                    <h3 style="margin-bottom: 15px;">⚡ Multi-Agent Future</h3>
-                    <ul style="font-size: 1.05em; line-height: 2;">
-                        <li><strong>claude.ai/code:</strong> Cloud-based agents, work from any device</li>
-                        <li><strong>Run multiple agents:</strong> Tests, docs, reviews in parallel</li>
-                        <li><strong>Your role:</strong> Orchestrate agents, not write code</li>
-                    </ul>
                 </div>
 
                 <aside class="notes">
-                    Agents automate tests, docs, and PR reviews. Developers orchestrate multiple agents in parallel. Claude.ai/code brings this to the cloud. The future is developers as orchestrators, not typists.
+                    Future is multi-agent workflows: one agent writes tests while another handles docs and another reviews code. Claude.ai/code brings this to the cloud. Developers become orchestrators.
                 </aside>
             </section>
 
