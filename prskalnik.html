@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>6 Months with AI Coding Agents: Real Lessons from Solo Testing to Team Pilot</title>
+    <title>6 Months with AI Coding Agents: My Journey from Copilot to Claude Code</title>
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/preskok-briefd.css">
 </head>
@@ -14,6 +14,7 @@
             <!-- SLIDE 1: Title -->
             <section class="center">
                 <h1>6 Months with AI Coding Agents</h1>
+                <p style="margin-top: 40px; font-size: 1.3em;">My Journey from Copilot to Claude Code</p>
                 <p style="margin-top: 40px; font-size: 1.5em;">
                     <strong>Jure Grandovec</strong>
                 </p>
@@ -22,618 +23,620 @@
                     <img src="https://autobrief.io/wp-content/uploads/2023/04/AutoBriefD-logo.svg" alt="Briefd" style="height: 35px; object-fit: contain; background: white; padding: 8px 12px; border-radius: 6px; border: 2px solid var(--briefd-green);">
                 </div>
                 <aside class="notes">
-                    This is my personal story: 6 months of testing Claude Code and MCPs on real projects, and how we're now piloting an AI agent program with the Briefd development team. Honest, down-to-earth, no BS.
+                    This is my personal story: searching for the right AI coding tool, what worked, what didn't, and what I learned along the way.
                 </aside>
             </section>
 
-
-            <!-- SLIDE 5: Agents vs Assistants -->
+            <!-- SLIDE 2: My Journey - The Search -->
             <section>
-                <h2>Agents vs Assistants: The Key Difference</h2>
+                <h2>My Journey: The Search for Better AI Tools</h2>
 
-                <div class="two-column" style="margin-top: 30px;">
+                <div style="margin-top: 60px; display: flex; flex-direction: column; gap: 30px;">
+                    <div style="display: flex; justify-content: space-around; align-items: center;">
+                        <div style="text-align: center; opacity: 0.6;">
+                            <img src="https://github.githubassets.com/images/modules/site/copilot/copilot.png" alt="GitHub Copilot" style="height: 60px; margin-bottom: 10px;">
+                            <p style="font-size: 0.8em;">GitHub Copilot<br><span style="color: #999;">2023 - 1 year</span></p>
+                        </div>
+                        <div style="font-size: 2em; color: #999;">→</div>
+                        <div style="text-align: center; opacity: 0.6;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT" style="height: 60px; margin-bottom: 10px;">
+                            <p style="font-size: 0.8em;">ChatGPT Code Review<br><span style="color: #999;">Custom GitHub Action</span></p>
+                        </div>
+                        <div style="font-size: 2em; color: #999;">→</div>
+                        <div style="text-align: center; opacity: 0.6;">
+                            <img src="https://www.cursor.com/assets/images/logo.svg" alt="Cursor" style="height: 60px; margin-bottom: 10px;">
+                            <p style="font-size: 0.8em;">Cursor Pro<br><span style="color: #999;">14-day trial</span></p>
+                        </div>
+                        <div style="font-size: 2em; color: #999;">→</div>
+                        <div style="text-align: center;">
+                            <img src="https://claude.ai/images/claude_app_icon.png" alt="Claude Code" style="height: 60px; margin-bottom: 10px; border: 3px solid var(--briefd-green); border-radius: 12px; padding: 5px;">
+                            <p style="font-size: 0.8em;"><strong>Claude Code</strong><br><span style="color: var(--briefd-green);">Finally!</span></p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box" style="padding: 30px; text-align: center;">
+                        <h3>Each tool taught me something about what I really needed</h3>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    Started with Copilot in 2023, used it for a year. Then tried ChatGPT code review, then Cursor Pro trial. Each had promise, each had problems. Then I found Claude Code.
+                </aside>
+            </section>
+
+            <!-- SLIDE 3: GitHub Copilot - 1 Year of Autocomplete -->
+            <section>
+                <h2>GitHub Copilot: 1 Year of Autocomplete</h2>
+
+                <div class="two-column" style="margin-top: 50px;">
+                    <div style="text-align: center;">
+                        <img src="https://github.githubassets.com/images/modules/site/copilot/copilot-ide.png" alt="GitHub Copilot in action" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    </div>
+                    <div>
+                        <div class="mcp-box" style="padding: 30px; margin-bottom: 20px;">
+                            <h3>✅ What Was Good</h3>
+                            <ul style="font-size: 1em; line-height: 1.9;">
+                                <li>Fast code completion</li>
+                                <li>Saved typing time</li>
+                                <li>Good for boilerplate</li>
+                            </ul>
+                        </div>
+                        <div class="warning-box" style="padding: 30px;">
+                            <h3>❌ What Was Missing</h3>
+                            <ul style="font-size: 1em; line-height: 1.9;">
+                                <li>No project context</li>
+                                <li>No workflow execution</li>
+                                <li>Just suggestions, not action</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    Used Copilot for a year. Great for autocomplete and boilerplate, but it's just suggestions. No understanding of the full project, no ability to execute workflows.
+                </aside>
+            </section>
+
+            <!-- SLIDE 4: ChatGPT & Cursor - The Failed Experiments -->
+            <section>
+                <h2>ChatGPT & Cursor: The Failed Experiments</h2>
+
+                <div class="two-column" style="margin-top: 40px; gap: 25px;">
+                    <div class="highlight-box" style="padding: 30px;">
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT" style="height: 50px;">
+                        </div>
+                        <h3>ChatGPT Code Review</h3>
+                        <p style="font-size: 0.9em; margin-top: 15px; font-style: italic;">Custom GitHub Action for PR reviews</p>
+                        <div class="warning-box" style="margin-top: 20px; padding: 20px;">
+                            <p style="font-size: 0.95em; margin: 0;"><strong>The Problem:</strong> Only saw code blocks, no project context. Couldn't understand the bigger picture.</p>
+                        </div>
+                        <p style="margin-top: 15px; text-align: center; font-size: 1.1em; color: #d9534f;">❌ Disabled</p>
+                    </div>
+
+                    <div class="highlight-box" style="padding: 30px;">
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            <img src="https://www.cursor.com/assets/images/logo.svg" alt="Cursor" style="height: 50px;">
+                        </div>
+                        <h3>Cursor Pro (14-day trial)</h3>
+                        <p style="font-size: 0.9em; margin-top: 15px; font-style: italic;">Promised AI agent capabilities</p>
+                        <div class="warning-box" style="margin-top: 20px; padding: 20px;">
+                            <p style="font-size: 0.95em; margin: 0;"><strong>The Problem:</strong> Corrupted files, especially big files. Lost trust immediately.</p>
+                        </div>
+                        <p style="margin-top: 15px; text-align: center; font-size: 1.1em; color: #d9534f;">❌ Stopped after trial</p>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    Tried ChatGPT with custom GitHub action for code review - failed because no project context. Tried Cursor Pro - corrupted files killed trust. Both taught me what NOT to accept.
+                </aside>
+            </section>
+
+            <!-- SLIDE 5: Finding Claude Code - What Changed -->
+            <section>
+                <h2>Finding Claude Code: What Finally Worked</h2>
+
+                <div style="margin-top: 50px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                    <div class="mcp-box" style="padding: 40px; margin-bottom: 30px; text-align: center;">
+                        <img src="https://claude.ai/images/claude_app_icon.png" alt="Claude Code" style="height: 80px; margin-bottom: 20px;">
+                        <h3 style="font-size: 1.4em;">Terminal-based AI Agent</h3>
+                        <p style="font-size: 1em; margin-top: 15px;">Not autocomplete. Not a chatbot. A full autonomous agent.</p>
+                    </div>
+
+                    <div class="highlight-box" style="padding: 35px;">
+                        <h3 style="margin-bottom: 25px;">My Journey with Claude Code</h3>
+                        <div style="display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; align-items: center; gap: 20px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 2em; margin-bottom: 10px;">🐛</div>
+                                <p style="font-size: 0.9em;"><strong>Started:</strong><br>Small bugs</p>
+                            </div>
+                            <div style="font-size: 1.5em; color: var(--briefd-green);">→</div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2em; margin-bottom: 10px;">📝</div>
+                                <p style="font-size: 0.9em;"><strong>Grew to:</strong><br>Major features</p>
+                            </div>
+                            <div style="font-size: 1.5em; color: var(--briefd-green);">→</div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2em; margin-bottom: 10px;">🚀</div>
+                                <p style="font-size: 0.9em;"><strong>Now:</strong><br>Daily driver</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 30px; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 6px;">
+                            <p style="font-size: 1em; margin: 0;"><strong>Big Projects:</strong> Fiscalization 2.0 for Croatia, Vehicle Model Mapping, and more</p>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    Started cautiously with small bugs. Built trust. Then tackled Fiscalization 2.0 - complex Croatian e-invoice system. Then vehicle model mapping. Now it's my daily tool for everything.
+                </aside>
+            </section>
+
+            <!-- SLIDE 6: Agents vs Assistants -->
+            <section>
+                <h2>Agents vs Assistants: The Key Difference I Discovered</h2>
+
+                <div class="two-column" style="margin-top: 40px;">
                     <div class="highlight-box" style="padding: 30px;">
                         <h3>🤝 AI Assistants</h3>
-                        <ul style="font-size: 1em; margin-top: 25px; line-height: 1.8;">
-                            <li><strong>Suggest</strong> code completions</li>
-                            <li><strong>Answer</strong> questions about code</li>
-                            <li>You execute everything manually</li>
+                        <p style="font-size: 0.85em; color: #999; margin-bottom: 20px;">Copilot, ChatGPT</p>
+                        <ul style="font-size: 1em; margin-top: 25px; line-height: 1.9;">
+                            <li><strong>Suggest</strong> code</li>
+                            <li><strong>Answer</strong> questions</li>
+                            <li>You execute manually</li>
+                            <li>Limited context</li>
                         </ul>
-                        <p style="margin-top: 25px; font-size: 0.9em; color: #666;"><strong>Examples:</strong> GitHub Copilot, ChatGPT</p>
                     </div>
                     <div class="mcp-box" style="padding: 30px;">
                         <h3>🤖 AI Agents</h3>
-                        <ul style="font-size: 1em; margin-top: 25px; line-height: 1.8;">
-                            <li><strong>Execute</strong> complete workflows</li>
-                            <li><strong>Make</strong> file changes directly</li>
-                            <li><strong>Run</strong> tests and fix errors</li>
-                        </ul>
-                        <p style="margin-top: 25px; font-size: 0.9em; color: #666;"><strong>Examples:</strong> Claude Code, Cursor, Windsurf</p>
-                    </div>
-                </div>
-
-                <aside class="notes">
-                    Assistants suggest code, agents execute complete workflows. With Claude Code, I say "fix bug #234 and create a PR" - it handles everything from reading files to running tests. I just approve each step.
-                </aside>
-            </section>
-
-
-            <!-- SLIDE 3: What is Claude Code? -->
-            <section>
-                <h2>What is Claude Code?</h2>
-
-                <div class="highlight-box" style="margin-top: 30px;">
-                    <h3>An AI coding agent that lives in your terminal</h3>
-                    <p style="margin-top: 15px; font-size: 0.95em;">Not autocomplete. Not a chatbot. A full autonomous agent that executes complete workflows.</p>
-                </div>
-
-                <div class="two-column" style="margin-top: 30px;">
-                    <div>
-                        <h3>What It Can Do:</h3>
-                        <ul style="font-size: 0.9em; line-height: 1.8;">
-                            <li>Reads entire codebase</li>
-                            <li>Writes & modifies code</li>
-                            <li>Runs tests, fixes errors</li>
-                            <li>Creates PRs with descriptions</li>
+                        <p style="font-size: 0.85em; color: #999; margin-bottom: 20px;">Claude Code, Cursor</p>
+                        <ul style="font-size: 1em; margin-top: 25px; line-height: 1.9;">
+                            <li><strong>Execute</strong> workflows</li>
+                            <li><strong>Make</strong> file changes</li>
+                            <li><strong>Run</strong> tests & fix errors</li>
+                            <li>Full codebase context</li>
                         </ul>
                     </div>
-                    <div>
-                        <h3>Installation:</h3>
-                        <div class="code-box" style="margin-top: 10px; font-size: 0.75em;">
-                            npm install -g @anthropic-ai/claude-code<br>
-                            claude-code auth<br>
-                            claude-code
-                        </div>
-                        <p style="margin-top: 20px; font-size: 0.85em;"><strong>Made by:</strong> Anthropic<br>
-                        <strong>Model:</strong> Claude 3.5 Sonnet<br>
-                        <strong>Cost:</strong> Claude Pro subscription</p>
-                    </div>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 30px; padding: 25px; text-align: center;">
+                    <p style="font-size: 1.1em; margin: 0;"><strong>The difference:</strong> "Fix bug #234 and create a PR" → Claude does it all, I approve each step</p>
                 </div>
 
                 <aside class="notes">
-                    Claude Code is Anthropic's official CLI tool that brings AI directly into your development workflow. Unlike Copilot which suggests code, Claude Code actually executes tasks end-to-end. You approve each step, but it handles the execution.
+                    This is the key insight: Assistants suggest, agents execute. Claude Code reads my entire codebase, makes changes, runs tests, creates PRs. I approve each step, but it handles execution.
                 </aside>
             </section>
 
-            <!-- SLIDE 4: Real-World Example - Fixing Image Processing Queue -->
+            <!-- SLIDE 7: My First Big Win - Fiscalization 2.0 -->
             <section>
-                <h2>Real-World Example: Fixing Image Processing Queue</h2>
-
-                <div class="highlight-box" style="text-align: center; margin-bottom: 20px;">
-                    <p><strong>Scenario:</strong> Production bug in image processing - files stuck in queue</p>
-                </div>
-
-                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 20px;">
-                    <div style="text-align: center;">
-                        <img src="img/2/Screenshot 2025-10-21 at 14.58.46.png" alt="Initial Problem" style="width: 100%; border: 2px solid var(--preskok-red); border-radius: 6px;">
-                        <p style="font-size: 0.7em; margin-top: 8px;"><strong>1. Identify Issue</strong><br>Claude analyzes queue system</p>
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="img/2/Screenshot 2025-10-21 at 14.59.24.png" alt="Claude Working" style="width: 100%; border: 2px solid var(--briefd-green); border-radius: 6px;">
-                        <p style="font-size: 0.7em; margin-top: 8px;"><strong>2. Fix Implementation</strong><br>Updates worker code & tests</p>
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="img/2/Screenshot 2025-10-21 at 15.00.46.png" alt="Final Result" style="width: 100%; border: 2px solid var(--preskok-red); border-radius: 6px;">
-                        <p style="font-size: 0.7em; margin-top: 8px;"><strong>3. Deploy & Verify</strong><br>Tests pass, queue processing</p>
-                    </div>
-                </div>
-
-                <aside class="notes">
-                    Real example from last month. Claude Code analyzed the queue system, found the bug, updated the worker code, added tests, and we deployed. This is the power of having AI understand your entire codebase.
-                </aside>
-            </section>
-
-            <!-- SLIDE: Case Study Part 1 - The Challenge & Approach -->
-            <section>
-                <h2>Case Study: E-invoices Fiscalization 2.0 for Croatia</h2>
-                <p style="font-size: 0.95em; margin-top: 15px; color: #666;">Building a complex fiscalization system with Claude Code over 2+ months</p>
+                <h2>My First Big Win: E-invoice Fiscalization 2.0</h2>
+                <p style="font-size: 0.95em; margin-top: 15px; color: #666;">Building a complex fiscalization system for Croatia over 2+ months</p>
 
                 <div class="two-column" style="margin-top: 30px; gap: 25px;">
                     <div class="highlight-box" style="padding: 30px;">
                         <h3>🎯 The Challenge</h3>
                         <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
-                            <li>Croatian e-invoice fiscalization system</li>
-                            <li>Complex regulations & documentation</li>
-                            <li>Multiple integrations, strict formats</li>
+                            <li>Croatian government regulations</li>
+                            <li>Complex technical specs & diagrams</li>
+                            <li>Multiple integrations</li>
+                            <li>Strict UBL 2.1 format</li>
                             <li>Ongoing 3rd-party alignment</li>
                         </ul>
                     </div>
                     <div class="mcp-box" style="padding: 30px;">
                         <h3>🤖 What Claude Did</h3>
                         <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
-                            <li>Researched government regulations</li>
+                            <li>Researched government docs</li>
+                            <li>Parsed technical diagrams</li>
                             <li>Built invoice processing logic</li>
                             <li>Converted to UBL 2.1</li>
-                            <li>Created APIs & tests</li>
+                            <li>Created APIs with tests</li>
                         </ul>
                     </div>
                 </div>
 
-                <aside class="notes">
-                    Real project: E-invoices Fiscalization 2.0 for Croatia. Claude researched government docs, built the business logic, handled format conversions, and created all the API endpoints with tests.
-                </aside>
-            </section>
-
-            <!-- SLIDE: Case Study Part 2 - Results & Lessons -->
-            <section>
-                <h2>Case Study Results & Lessons</h2>
-                <p style="font-size: 0.95em; margin-top: 15px; color: #666;">What we learned building this fiscalization system</p>
-
-                <div style="margin-top: 30px;">
-                    <div class="highlight-box" style="padding: 30px; margin-bottom: 20px;">
-                        <h3>💡 Key Results</h3>
-                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
-                            <li>Parsed technical specs & diagrams</li>
-                            <li>Understood existing workflow seamlessly</li>
-                            <li>Built faster than traditional</li>
-                        </ul>
-                    </div>
-                    <div class="mcp-box" style="padding: 30px;">
-                        <h3>📈 Lessons Learned</h3>
-                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
-                            <li>Use planning mode from day 1</li>
-                            <li>Upfront planning reduces iteration</li>
-                            <li>Feed all context upfront</li>
-                        </ul>
-                    </div>
+                <div class="highlight-box" style="margin-top: 25px; padding: 25px;">
+                    <h3>💡 Key Insight</h3>
+                    <p style="font-size: 0.95em; margin: 0;">Claude parsed technical specs, understood existing workflow seamlessly, and built faster than traditional approach. This convinced me it was production-ready.</p>
                 </div>
 
                 <aside class="notes">
-                    Key takeaways: Claude handled documentation and complex transformations. Biggest lesson: use planning mode from the start. Let the agent read all available context upfront for better results.
+                    This was the test: complex Croatian e-invoice system. Claude researched government regulations, parsed technical docs and diagrams, built the entire processing logic. This proved it could handle real production work.
                 </aside>
             </section>
 
-            <!-- SLIDE: Claude Code Best Practices for Best Results -->
+            <!-- SLIDE 8: Best Practices I Learned -->
             <section>
-                <h2>Getting the Best Results with Claude Code</h2>
-
-                <div class="two-column" style="margin-top: 30px; gap: 20px;">
-                    <div>
-                        <div class="highlight-box" style="padding: 25px; margin-bottom: 15px;">
-                            <h3>🔄 Reset Sessions Often</h3>
-                            <ul style="font-size: 0.9em; margin-top: 12px; line-height: 1.8;">
-                                <li>Start fresh between different tasks</li>
-                                <li>Avoids unnecessary memory accumulation</li>
-                                <li>Prevents context contamination</li>
-                            </ul>
-                        </div>
-                        <div class="mcp-box" style="padding: 25px; margin-bottom: 15px;">
-                            <h3>📝 Write Descriptive Initial Prompts</h3>
-                            <ul style="font-size: 0.9em; margin-top: 12px; line-height: 1.8;">
-                                <li>Include <strong>context:</strong> what, where, why</li>
-                                <li>Reference <strong>specific files</strong> and patterns</li>
-                                <li>Share <strong>full error messages</strong> if debugging</li>
-                            </ul>
-                        </div>
-                        <div class="highlight-box" style="padding: 25px;">
-                            <h3>🎯 Use Planning Mode First</h3>
-                            <ul style="font-size: 0.9em; margin-top: 12px; line-height: 1.8;">
-                                <li>Start with planning mode</li>
-                                <li>Review plan before coding</li>
-                                <li>Refine until solid</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <div style="text-align: center;">
-                            <img src="img/3/Screenshot 2025-10-23 at 08.55.20.png" alt="Planning Mode Results" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 15px;">
-                            <p style="font-size: 0.75em; color: #666; font-style: italic;">Planning mode breaks down tasks before writing code</p>
-                        </div>
-                    </div>
-                </div>
-
-                <aside class="notes">
-                    Three rules for best results: Reset sessions between tasks to avoid memory bloat. Write detailed initial prompts with context and file paths. Always use planning mode first and refine the plan before coding.
-                </aside>
-            </section>
-
-            <!-- SLIDE 7: What is MCP? -->
-            <section>
-                <h2>Model Context Protocol (MCP)</h2>
-
-                <div class="highlight-box" style="margin-top: 30px;">
-                    <h3>"The USB-C for AI" - One standard to connect them all</h3>
-                    <p style="margin-top: 15px; font-size: 0.95em;">Open-source protocol that lets AI agents talk to ANY tool or data source through a standardized interface.</p>
-                </div>
-
-                <div class="two-column" style="margin-top: 30px;">
-                    <div>
-                        <h3>What It Does:</h3>
-                        <ul style="font-size: 0.9em; line-height: 1.8;">
-                            <li>Connects AI to external tools</li>
-                            <li>Reads APIs & databases</li>
-                            <li>Executes actions in apps</li>
-                            <li>Build once, use everywhere</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>The Details:</h3>
-                        <p style="font-size: 0.85em; line-height: 1.8;">
-                            <strong>Created by:</strong> Anthropic (November 2024)<br>
-                            <strong>Status:</strong> Open-source, vendor agnostic<br>
-                            <strong>Ecosystem:</strong> 100+ community MCPs<br>
-                            <strong>Purpose:</strong> Standardize AI-tool communication
-                        </p>
-                        <div class="warning-box" style="margin-top: 20px; font-size: 0.85em;">
-                            <strong>⚠️ Security Note:</strong> MCPs have full access to what you grant them. Review permissions carefully!
-                        </div>
-                    </div>
-                </div>
-
-                <aside class="notes">
-                    MCP is like USB-C for AI - one standard protocol instead of custom integrations. Created by Anthropic, now 100+ community MCPs available. Always review permissions carefully.
-                </aside>
-            </section>
-
-
-            <!-- SLIDE 10: How MCPs Work in Practice -->
-            <section>
-                <h2>How MCPs Work in Practice</h2>
-
-                <div class="highlight-box" style="margin-top: 30px; padding: 30px;">
-                    <h3>Installation & Configuration</h3>
-                    <p style="font-size: 0.95em; margin-top: 15px; line-height: 1.7;">
-                        MCPs are configured in your Claude Desktop or Claude Code settings. Each MCP needs permissions and sometimes API keys.
-                    </p>
-                </div>
-
-                <div class="two-column" style="margin-top: 35px;">
-                    <div>
-                        <h3>Example: GitHub MCP</h3>
-                        <div class="code-box" style="margin-top: 15px; font-size: 0.75em; padding: 20px;">
-                            {<br>
-                            &nbsp;&nbsp;"mcpServers": {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;"github": {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"command": "npx ...",<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"env": { "GITHUB_TOKEN": "..." }<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                            &nbsp;&nbsp;}<br>
-                            }
-                        </div>
-                    </div>
-                    <div>
-                        <h3>What You Can Do:</h3>
-                        <ul style="font-size: 1em; line-height: 1.9; margin-top: 15px;">
-                            <li><strong>Read:</strong> "Show me issue #234"</li>
-                            <li><strong>Create:</strong> "Make a PR for this fix"</li>
-                            <li><strong>Analyze:</strong> "Review recent commits"</li>
-                        </ul>
-                        <p style="margin-top: 25px; font-size: 0.9em; color: #666; font-style: italic;">
-                            Start with read-only permissions, expand later
-                        </p>
-                    </div>
-                </div>
-
-                <aside class="notes">
-                    Configure MCPs in claude_desktop_config.json with command, args, and API tokens. Once set up, just ask Claude in plain English - it knows which MCP to use. Start with read-only permissions.
-                </aside>
-            </section>
-
-            <!-- PART 2: REAL-WORLD APPLICATION -->
-
-            <!-- SLIDE: Safety & Security Best Practices -->
-            <section>
-                <h2>Safety & Security Best Practices</h2>
+                <h2>Best Practices I Learned the Hard Way</h2>
 
                 <div class="two-column" style="margin-top: 40px; gap: 25px;">
-                    <div class="mcp-box" style="padding: 30px;">
-                        <h3>🔐 MCP Security</h3>
-                        <ul style="font-size: 0.95em; margin-top: 20px; line-height: 1.9;">
-                            <li>Start in <strong>read-only mode</strong></li>
-                            <li>Use <strong>separate API keys</strong> per service</li>
-                            <li>Expand permissions <strong>gradually</strong></li>
-                        </ul>
-                    </div>
-
                     <div class="highlight-box" style="padding: 30px;">
-                        <h3>✅ Code Review</h3>
-                        <ul style="font-size: 0.95em; margin-top: 20px; line-height: 1.9;">
-                            <li><strong>Review code</strong> before accepting</li>
-                            <li>Use <strong>pre-commit hooks</strong> to block secrets</li>
-                            <li>Never share <strong>.env files</strong> with AI</li>
-                        </ul>
+                        <h3>🔄 Reset Sessions Often</h3>
+                        <p style="font-size: 0.95em; margin-top: 12px; line-height: 1.7;">Fresh start between tasks prevents context contamination and memory bloat.</p>
+                    </div>
+                    <div class="mcp-box" style="padding: 30px;">
+                        <h3>📝 Descriptive Initial Prompts</h3>
+                        <p style="font-size: 0.95em; margin-top: 12px; line-height: 1.7;">Include context, specific files, error messages. Better prompt = fewer iterations.</p>
+                    </div>
+                    <div class="highlight-box" style="padding: 30px;">
+                        <h3>🎯 Use Planning Mode First</h3>
+                        <p style="font-size: 0.95em; margin-top: 12px; line-height: 1.7;">Start with plan, review, refine. Then execute. Saves massive amounts of time.</p>
+                    </div>
+                    <div class="warning-box" style="padding: 30px;">
+                        <h3>✅ Always Review Everything</h3>
+                        <p style="font-size: 0.95em; margin-top: 12px; line-height: 1.7;">Never trust blindly. Review code, test thoroughly. AI makes mistakes.</p>
                     </div>
                 </div>
 
                 <aside class="notes">
-                    Safety essentials: Start MCPs read-only with separate API keys. Always review code before accepting. Use pre-commit hooks to prevent secrets. Never share environment files with AI.
-                </aside>
-            </section>
-            <!-- PART 3: WHAT DID I USE -->
-
-
-            <!-- SLIDE: Claude Desktop -->
-            <section>
-                <h2>Claude Desktop</h2>
-                <p style="font-size: 1em; margin-top: 20px; color: #666;">GUI with full MCP support</p>
-
-                <div style="margin-top: 50px; text-align: center;">
-                    <video autoplay loop muted playsinline style="max-width: 70%; max-height: 600px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                        <source src="https://cdn.sanity.io/files/4zrzovbb/website/c79a930bcab444c36900ccd3d25617297b53bbdf.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <aside class="notes">
-                    Claude Desktop is my go-to for MCP configuration and when I need a visual interface. Easier to manage multiple MCPs, see conversation history, and work with images or complex outputs.
+                    Four rules I learned: Reset sessions to avoid bloat. Write detailed prompts with full context. Always use planning mode first. And never, ever trust AI blindly - review everything.
                 </aside>
             </section>
 
-            <!-- SLIDE: GitHub Claude Bot -->
+            <!-- SLIDE 9: Discovering MCPs - Laravel Boost Changed Everything -->
             <section>
-                <h2>GitHub Claude Bot</h2>
-                <p style="font-size: 1em; margin-top: 20px; color: #666;">AI-powered PR reviews</p>
+                <h2>Discovering MCPs: Laravel Boost Changed Everything</h2>
 
-                <div style="margin-top: 50px; text-align: center;">
-                    <video autoplay loop muted playsinline controls style="max-width: 70%; max-height: 800px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                        <source src="img/github-claude-bot-demo.mov" type="video/mp4">
-                        <source src="img/github-claude-bot-demo.mov" type="video/quicktime">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <aside class="notes">
-                    The GitHub Claude bot handles PR reviews, suggests improvements, and helps with issue triage. It's like having an extra reviewer on every PR who never gets tired and always follows conventions.
-                </aside>
-            </section>
-
-            <!-- SLIDE: MCP Ecosystem -->
-            <section>
-                <h2>MCP Ecosystem: 100+ Integrations Available</h2>
-                <p style="font-size: 0.95em; margin-top: 10px; color: #666;">Connect your AI agent to tools you already use</p>
-
-                <div style="margin-top: 35px;">
-                    <!-- What I Use -->
-                    <div class="highlight-box" style="padding: 25px; margin-bottom: 20px;">
-                        <h3 style="font-size: 1.2em; margin-bottom: 15px;">🔧 What I Use Daily</h3>
-                        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; font-size: 0.85em;">
-                            <div style="display: flex; align-items: center; gap: 8px;">
-                                <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel" style="height: 20px; width: 20px;">
-                                <strong>Laravel Boost</strong>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 8px;">
-                                <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular" style="height: 20px; width: 20px;">
-                                <strong>Angular CLI</strong>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 8px;">
-                                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="height: 20px; width: 20px;">
-                                <strong>GitHub</strong>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 8px;">
-                                <img src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" alt="Slack" style="height: 20px; width: 20px;">
-                                <strong>Slack</strong>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Popular Options -->
-                    <div class="mcp-box" style="padding: 25px;">
-                        <h3 style="font-size: 1.2em; margin-bottom: 15px;">🌟 Popular Community MCPs</h3>
-                        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; font-size: 0.85em;">
-                            <div style="display: flex; align-items: center; gap: 8px;">
-                                <img src="https://www.postgresql.org/media/img/about/press/elephant.png" alt="PostgreSQL" style="height: 20px; width: 20px;">
-                                PostgreSQL
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 8px;">
-                                <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker" style="height: 20px; width: 20px;">
-                                Docker
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 8px;">
-                                <img src="https://cdn.simpleicons.org/linear/5E6AD2" alt="Linear" style="height: 20px; width: 20px;">
-                                Linear
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 8px;">
-                                <img src="https://cdn.worldvectorlogo.com/logos/jira-1.svg" alt="Jira" style="height: 20px; width: 20px;">
-                                Jira
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 8px;">
-                                <img src="https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=670&h=670&q=75&fit=max&auto=format" alt="Figma" style="height: 20px; width: 20px;">
-                                Figma
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 8px;">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" alt="Notion" style="height: 20px; width: 20px;">
-                                Notion
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 8px;">
-                                <img src="https://about.gitlab.com/images/press/press-kit-icon.svg" alt="GitLab" style="height: 20px; width: 20px;">
-                                GitLab
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 8px;">
-                                <img src="https://cdn.worldvectorlogo.com/logos/confluence-1.svg" alt="Confluence" style="height: 20px; width: 20px;">
-                                Confluence
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <aside class="notes">
-                    I use Laravel Boost for artisan commands, Angular CLI for code generation, GitHub for PRs, and Slack for team context. 100+ community MCPs available - databases, DevOps, design tools, project management. Start small, expand as needed.
-                </aside>
-            </section>
-
-            <!-- SLIDE: .MD Context Files -->
-            <section>
-                <h2>.MD Context Files: Write Once, AI Follows Forever</h2>
-                <p style="font-size: 0.95em; margin-top: 10px; color: #666;">Claude reads these automatically - no prompting needed</p>
-
-                <div style="margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                    <div class="highlight-box" style="padding: 25px;">
-                        <h3 style="font-size: 1.1em;">📄 CLAUDE.md</h3>
-                        <p style="font-size: 0.8em; color: #666; margin-top: 5px;">Project root</p>
-                        <ul style="font-size: 0.85em; margin-top: 15px; line-height: 1.8;">
-                            <li>Project conventions</li>
-                            <li>Testing commands</li>
-                            <li>Architecture patterns</li>
-                        </ul>
-                    </div>
-
-                    <div class="mcp-box" style="padding: 25px;">
-                        <h3 style="font-size: 1.1em;">🌐 ~/.claude/init/</h3>
-                        <p style="font-size: 0.8em; color: #666; margin-top: 5px;">Global config</p>
-                        <ul style="font-size: 0.85em; margin-top: 15px; line-height: 1.8;">
-                            <li>Company standards</li>
-                            <li>Team practices</li>
-                            <li>Security policies</li>
-                        </ul>
-                    </div>
-
-                    <div class="mcp-box" style="padding: 25px;">
-                        <h3 style="font-size: 1.1em;">⚡ .claude/commands/</h3>
-                        <p style="font-size: 0.8em; color: #666; margin-top: 5px;">Custom slash commands</p>
-                        <ul style="font-size: 0.85em; margin-top: 15px; line-height: 1.8;">
-                            <li>Reusable prompts</li>
-                            <li>Use: <code>/command-name</code></li>
-                            <li>Share via git</li>
-                        </ul>
-                    </div>
-
-                    <div class="highlight-box" style="padding: 25px;">
-                        <h3 style="font-size: 1.1em;">📁 docs/ai-context/</h3>
-                        <p style="font-size: 0.8em; color: #666; margin-top: 5px;">Feature docs</p>
-                        <ul style="font-size: 0.85em; margin-top: 15px; line-height: 1.8;">
-                            <li>Business logic</li>
-                            <li>Module context</li>
-                            <li>Dependencies</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <aside class="notes">
-                    Most underrated feature: .MD files Claude auto-reads. CLAUDE.md for project rules, ~/.claude/init/ for company standards, .claude/commands/ for reusable prompts, docs/ai-context/ for deep feature context. Write once, Claude follows forever.
-                </aside>
-            </section>
-
-            <!-- FINDING 2: Code Review & Context Paradox -->
-            <section>
-                <h2>Finding #2: Expertise Becomes More Valuable</h2>
-
-                <div class="two-column" style="margin-top: 50px;">
-                    <div class="mcp-box" style="padding: 35px;">
-                        <h3>🔍 You Must Review Everything</h3>
-                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
-                            <li>Agents may violate architecture patterns</li>
-                            <li>Security needs human validation</li>
-                            <li>You approve workflows, not just code</li>
-                        </ul>
+                <div style="margin-top: 50px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                    <div class="mcp-box" style="padding: 35px; margin-bottom: 25px;">
+                        <h3 style="margin-bottom: 20px;">💡 The "Aha!" Moment</h3>
+                        <p style="font-size: 1.05em; line-height: 1.8;">A few weeks after starting Claude Code, I discovered <strong>Laravel Boost MCP</strong>. Suddenly Claude could run artisan commands, understand Laravel patterns, and build features faster.</p>
+                        <p style="font-size: 1.05em; line-height: 1.8; margin-top: 15px;">I was <strong>amazed</strong>. This opened a whole new world.</p>
                     </div>
 
                     <div class="highlight-box" style="padding: 35px;">
-                        <h3>🎯 Deep Knowledge = Better Prompts</h3>
-                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
-                            <li>Reference existing patterns & files</li>
-                            <li>Spot mistakes immediately</li>
-                            <li>Set clear boundaries</li>
-                        </ul>
+                        <h3 style="margin-bottom: 20px;">🚀 Then I Started Experimenting</h3>
+                        <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+                            <div style="text-align: center;">
+                                <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel" style="height: 40px; margin-bottom: 8px;">
+                                <p style="font-size: 0.85em;">Laravel Boost</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular" style="height: 40px; margin-bottom: 8px;">
+                                <p style="font-size: 0.85em;">Angular CLI</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <img src="https://cdn.worldvectorlogo.com/logos/jira-1.svg" alt="Jira" style="height: 40px; margin-bottom: 8px;">
+                                <p style="font-size: 0.85em;">Jira</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <img src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" alt="Slack" style="height: 40px; margin-bottom: 8px;">
+                                <p style="font-size: 0.85em;">Slack</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="height: 40px; margin-bottom: 8px;">
+                                <p style="font-size: 0.85em;">GitHub + Bot</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <aside class="notes">
-                    AI makes expertise MORE valuable. Seniors prompt better, catch issues faster, and understand implications. Code review validates workflows and architecture, not just syntax.
+                    A few weeks in, discovered Laravel Boost MCP. It was a revelation - Claude could suddenly understand and execute Laravel-specific commands. Then I went on an MCP spree: Angular CLI, Jira, Slack, GitHub, and eventually the GitHub PR review bot.
                 </aside>
             </section>
 
-            <!-- FINDING 3: The Prompting Gap -->
+            <!-- SLIDE 10: What is MCP & How It Works -->
             <section>
-                <h2>Finding #3: The Senior-Junior Gap & How to Bridge It</h2>
+                <h2>What is MCP?</h2>
+                <p style="font-size: 0.95em; margin-top: 10px; color: #666;">Model Context Protocol - "The USB-C for AI"</p>
 
-                <div class="two-column" style="margin-top: 40px;">
-                    <div class="mcp-box" style="padding: 30px;">
-                        <h3>👴 Seniors: 3-5 iterations</h3>
-                        <ul style="font-size: 1em; margin-top: 15px; line-height: 1.9;">
-                            <li>Reference existing patterns</li>
-                            <li>Spot architecture issues fast</li>
-                            <li>Set clear boundaries</li>
-                        </ul>
-                    </div>
+                <div class="two-column" style="margin-top: 35px; gap: 25px;">
                     <div class="highlight-box" style="padding: 30px;">
-                        <h3>👶 Juniors: 10+ iterations</h3>
-                        <ul style="font-size: 1em; margin-top: 15px; line-height: 1.9;">
-                            <li>Vague requests without context</li>
-                            <li>Miss pattern violations</li>
-                            <li>Accept wrong solutions</li>
+                        <h3>The Concept</h3>
+                        <p style="font-size: 0.95em; margin-top: 15px; line-height: 1.7;">One standard protocol to connect AI agents to ANY tool or data source. No more custom integrations for every AI × tool combination.</p>
+                        <p style="font-size: 0.85em; margin-top: 15px; line-height: 1.7;">
+                            <strong>Created by:</strong> Anthropic (Nov 2024)<br>
+                            <strong>Status:</strong> Open-source<br>
+                            <strong>Ecosystem:</strong> 100+ community MCPs
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="mcp-box" style="padding: 25px; margin-bottom: 15px;">
+                            <h3>How I Use It</h3>
+                            <p style="font-size: 0.9em; margin-top: 10px; line-height: 1.7;">Configure once in claude_desktop_config.json with API keys. Then just talk to Claude in plain English:</p>
+                        </div>
+                        <div class="code-box" style="padding: 20px; font-size: 0.75em; margin-bottom: 15px;">
+                            "Show me issue #234"<br>
+                            "Create a Laravel migration"<br>
+                            "Generate Angular component"<br>
+                            "Make a PR for this fix"
+                        </div>
+                        <div class="warning-box" style="padding: 20px; font-size: 0.85em;">
+                            <strong>⚠️ Security:</strong> MCPs have full access to what you grant. Start read-only!
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    MCP is like USB-C for AI - one standard instead of custom integrations. Configure once with API keys, then just talk to Claude normally. It knows which MCP to use. Always start with read-only permissions.
+                </aside>
+            </section>
+
+            <!-- SLIDE 11: MCPs I Use Daily -->
+            <section>
+                <h2>MCPs I Use Daily & What I Solve With Them</h2>
+
+                <div style="margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+                    <div class="mcp-box" style="padding: 30px;">
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                            <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel" style="height: 40px;">
+                            <h3 style="margin: 0;">Laravel Boost</h3>
+                        </div>
+                        <ul style="font-size: 0.9em; line-height: 1.8;">
+                            <li>Artisan commands</li>
+                            <li>Generate migrations, models, controllers</li>
+                            <li>Understand Laravel patterns</li>
+                        </ul>
+                    </div>
+
+                    <div class="mcp-box" style="padding: 30px;">
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                            <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular" style="height: 40px;">
+                            <h3 style="margin: 0;">Angular CLI</h3>
+                        </div>
+                        <ul style="font-size: 0.9em; line-height: 1.8;">
+                            <li>Generate components, services</li>
+                            <li>Run ng commands</li>
+                            <li>Follow Angular best practices</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-box" style="padding: 30px;">
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="height: 40px;">
+                            <h3 style="margin: 0;">GitHub</h3>
+                        </div>
+                        <ul style="font-size: 0.9em; line-height: 1.8;">
+                            <li>Read issues and PRs</li>
+                            <li>Create PRs with descriptions</li>
+                            <li>Review recent commits</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-box" style="padding: 30px;">
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                            <img src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" alt="Slack" style="height: 40px;">
+                            <h3 style="margin: 0;">Slack</h3>
+                        </div>
+                        <ul style="font-size: 0.9em; line-height: 1.8;">
+                            <li>Read team discussions</li>
+                            <li>Understand context from conversations</li>
+                            <li>Align with team decisions</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="warning-box" style="margin-top: 40px; padding: 30px;">
-                    <h3 style="margin-bottom: 15px;">🌉 Bridge the Gap</h3>
-                    <ul style="font-size: 1em; line-height: 1.9;">
-                        <li>Use AI to explain code</li>
-                        <li>Codify patterns in CLAUDE.md</li>
-                        <li>Pair prompting: watch & learn</li>
-                    </ul>
-                </div>
-
                 <aside class="notes">
-                    Seniors are 10x more effective - 3-5 iterations vs 10+. Bridge the gap with CLAUDE.md files, pair prompting, and templates. AI doesn't replace learning, it shifts what you need to learn.
+                    Laravel Boost for backend Laravel work. Angular CLI for frontend code generation. GitHub for issue reading and PR creation. Slack for understanding team context and decisions. Each solves a specific part of my daily workflow.
                 </aside>
             </section>
 
-            <!-- SLIDE: Challenge #1 - When AI Fails -->
+            <!-- SLIDE 12: My Daily Workflow -->
             <section>
-                <h2>Challenge #1: When AI Gets It Wrong</h2>
+                <h2>My Daily Workflow with Claude Code</h2>
 
-                <div class="two-column" style="margin-top: 50px;">
-                    <div class="warning-box" style="padding: 35px;">
-                        <h3>⚠️ Common Failures</h3>
-                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
-                            <li>Hallucinations: plausible but wrong code</li>
-                            <li>Ignores your architecture patterns</li>
-                            <li>Introduces security vulnerabilities</li>
-                            <li>Outdated package versions</li>
-                        </ul>
+                <div style="margin-top: 40px; max-width: 1000px; margin-left: auto; margin-right: auto;">
+                    <div class="highlight-box" style="padding: 35px; margin-bottom: 25px;">
+                        <h3 style="margin-bottom: 20px;">🎯 How I Actually Use It</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+                            <div>
+                                <h4 style="color: var(--preskok-red); margin-bottom: 15px;">Frontend & Backend</h4>
+                                <ul style="font-size: 0.95em; line-height: 1.8;">
+                                    <li>Daily use on both stacks</li>
+                                    <li>Sometimes 2-3 Claude instances running</li>
+                                    <li>Solving bugs while others run prompts</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--briefd-green); margin-bottom: 15px;">Team Collaboration</h4>
+                                <ul style="font-size: 0.95em; line-height: 1.8;">
+                                    <li>GitHub PR reviews catch important info</li>
+                                    <li>Claude Bot provides second pair of eyes</li>
+                                    <li>Team uses bot reviews regularly</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="mcp-box" style="padding: 35px;">
-                        <h3>✅ What Helps</h3>
-                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
-                            <li>Always review everything</li>
-                            <li>Test thoroughly</li>
-                            <li>Use CLAUDE.md for patterns</li>
-                            <li>Run security scans</li>
-                        </ul>
+                        <h3 style="margin-bottom: 20px;">📋 I Use It For Almost Everything</h3>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; font-size: 0.95em;">
+                            <div>✅ Documentation</div>
+                            <div>✅ Reading API docs</div>
+                            <div>✅ Planning tickets</div>
+                            <div>✅ Reviewing code</div>
+                            <div>✅ Analyzing features</div>
+                            <div>✅ Planning integrations</div>
+                            <div>✅ Coding tickets</div>
+                            <div>✅ Reviewing written code</div>
+                            <div>✅ Testing & debugging</div>
+                        </div>
                     </div>
                 </div>
 
                 <aside class="notes">
-                    AI makes mistakes. Sometimes it hallucinates APIs that don't exist, sometimes it violates your architecture, sometimes it introduces security issues. Never trust blindly - always review and test.
+                    This is my actual daily workflow: Claude Code on both frontend and backend, sometimes 2-3 instances in parallel. Use it for literally everything - documentation, API reading, planning, coding, reviewing, analyzing. GitHub bot gives team a second reviewer.
                 </aside>
             </section>
 
-            <!-- SLIDE: Challenge #2 - Costs & Limits -->
+            <!-- SLIDE 13: Claude Desktop & GitHub Bot -->
             <section>
-                <h2>Challenge #2: Real Costs & Limits</h2>
+                <h2>Claude Desktop & GitHub Bot</h2>
+                <p style="font-size: 0.95em; margin-top: 15px; color: #666;">The visual companion and team reviewer</p>
 
-                <div style="margin-top: 50px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <div class="two-column" style="margin-top: 40px; gap: 25px;">
+                    <div>
+                        <h3>Claude Desktop</h3>
+                        <p style="font-size: 0.9em; color: #666; margin-bottom: 15px;">GUI with full MCP support</p>
+                        <video autoplay loop muted playsinline style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                            <source src="https://cdn.sanity.io/files/4zrzovbb/website/c79a930bcab444c36900ccd3d25617297b53bbdf.mp4" type="video/mp4">
+                        </video>
+                        <p style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">When I need visual interface or MCP configuration</p>
+                    </div>
+
+                    <div>
+                        <h3>GitHub Claude Bot</h3>
+                        <p style="font-size: 0.9em; color: #666; margin-bottom: 15px;">AI-powered PR reviews for the team</p>
+                        <video autoplay loop muted playsinline controls style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                            <source src="img/github-claude-bot-demo.mov" type="video/mp4">
+                            <source src="img/github-claude-bot-demo.mov" type="video/quicktime">
+                        </video>
+                        <p style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Catches things humans miss, provides second review</p>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    Claude Desktop for visual work and MCP management. GitHub bot for team PR reviews - it catches important details and provides consistent second reviews. Both extend the core Claude Code experience.
+                </aside>
+            </section>
+
+            <!-- SLIDE 14: .MD Context Files & Safety -->
+            <section>
+                <h2>.MD Context Files & Safety: My Secret Weapons</h2>
+
+                <div class="two-column" style="margin-top: 35px; gap: 25px;">
+                    <div>
+                        <h3 style="margin-bottom: 20px;">📄 .MD Context Files</h3>
+                        <div class="highlight-box" style="padding: 25px; margin-bottom: 15px;">
+                            <h4 style="font-size: 1em;">CLAUDE.md (project root)</h4>
+                            <p style="font-size: 0.85em; margin-top: 8px; line-height: 1.6;">Project conventions, testing commands, architecture patterns</p>
+                        </div>
+                        <div class="mcp-box" style="padding: 25px; margin-bottom: 15px;">
+                            <h4 style="font-size: 1em;">~/.claude/init/ (global)</h4>
+                            <p style="font-size: 0.85em; margin-top: 8px; line-height: 1.6;">Company standards, team practices, security policies</p>
+                        </div>
+                        <div class="highlight-box" style="padding: 25px;">
+                            <h4 style="font-size: 1em;">.claude/commands/</h4>
+                            <p style="font-size: 0.85em; margin-top: 8px; line-height: 1.6;">Reusable slash commands, shared via git</p>
+                        </div>
+                        <p style="margin-top: 15px; font-size: 0.9em; font-style: italic; text-align: center;">Write once, Claude follows forever</p>
+                    </div>
+
+                    <div>
+                        <h3 style="margin-bottom: 20px;">🔐 Safety Best Practices</h3>
+                        <div class="warning-box" style="padding: 25px; margin-bottom: 15px;">
+                            <h4 style="font-size: 1em;">MCP Security</h4>
+                            <ul style="font-size: 0.85em; margin-top: 10px; line-height: 1.7;">
+                                <li>Start read-only mode</li>
+                                <li>Separate API keys per service</li>
+                                <li>Expand permissions gradually</li>
+                            </ul>
+                        </div>
+                        <div class="mcp-box" style="padding: 25px;">
+                            <h4 style="font-size: 1em;">Code Review</h4>
+                            <ul style="font-size: 0.85em; margin-top: 10px; line-height: 1.7;">
+                                <li>Review before accepting</li>
+                                <li>Pre-commit hooks block secrets</li>
+                                <li>Never share .env files</li>
+                            </ul>
+                        </div>
+                        <p style="margin-top: 15px; font-size: 0.9em; font-style: italic; text-align: center;">Trust, but verify</p>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    Two secret weapons: .MD files that Claude auto-reads (project conventions, company standards, reusable commands), and safety practices (read-only MCPs, code review, pre-commit hooks). These make everything more reliable and secure.
+                </aside>
+            </section>
+
+            <!-- SLIDE 15: What I Learned - Expertise & The Gap -->
+            <section>
+                <h2>What I Learned: Expertise & The Senior-Junior Gap</h2>
+
+                <div class="two-column" style="margin-top: 40px; gap: 25px;">
+                    <div class="highlight-box" style="padding: 35px;">
+                        <h3>💡 Finding #1: Your Expertise Becomes MORE Valuable</h3>
+                        <ul style="font-size: 1em; margin-top: 20px; line-height: 1.9;">
+                            <li>Better prompts = faster results</li>
+                            <li>Spot mistakes immediately</li>
+                            <li>Reference existing patterns</li>
+                            <li>Understand implications</li>
+                            <li>Validate workflows, not just code</li>
+                        </ul>
+                        <p style="margin-top: 20px; font-size: 0.95em; font-style: italic;">AI doesn't replace expertise - it amplifies it</p>
+                    </div>
+
+                    <div class="mcp-box" style="padding: 35px;">
+                        <h3>📊 Finding #2: The Prompting Gap</h3>
+                        <div style="margin-top: 20px;">
+                            <p style="font-size: 0.95em; margin-bottom: 15px;"><strong>Seniors:</strong> 3-5 iterations to working code</p>
+                            <p style="font-size: 0.95em; margin-bottom: 15px;"><strong>Juniors:</strong> 10+ iterations, sometimes wrong solution</p>
+                        </div>
+                        <div style="margin-top: 25px; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 6px;">
+                            <p style="font-size: 0.9em; margin: 0;"><strong>How to bridge:</strong> CLAUDE.md files, pair prompting, templates, teaching context</p>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    Two big findings: First, expertise becomes MORE valuable, not less. Better knowledge = better prompts = faster results. Second, there's a real senior-junior gap in AI effectiveness. Bridge it with CLAUDE.md files and pair prompting.
+                </aside>
+            </section>
+
+            <!-- SLIDE 16: The Reality - Challenges & Costs -->
+            <section>
+                <h2>The Reality: Challenges, Failures & Costs</h2>
+
+                <div style="margin-top: 40px;">
                     <div class="warning-box" style="padding: 35px; margin-bottom: 25px;">
-                        <h3>💰 Money & Time</h3>
-                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
-                            <li>Claude Pro: $20/month/developer</li>
-                            <li>Learning curve: 2-4 weeks</li>
-                            <li>Large codebases hit context limits</li>
-                        </ul>
+                        <h3>⚠️ When AI Gets It Wrong</h3>
+                        <div class="two-column" style="margin-top: 20px; gap: 25px;">
+                            <div>
+                                <p style="font-size: 0.95em; margin-bottom: 10px;"><strong>Common Failures:</strong></p>
+                                <ul style="font-size: 0.9em; line-height: 1.8;">
+                                    <li>Hallucinations: plausible but wrong</li>
+                                    <li>Ignores architecture patterns</li>
+                                    <li>Introduces security vulnerabilities</li>
+                                    <li>Uses outdated packages</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p style="font-size: 0.95em; margin-bottom: 10px;"><strong>What Helps:</strong></p>
+                                <ul style="font-size: 0.9em; line-height: 1.8;">
+                                    <li>Always review everything</li>
+                                    <li>Test thoroughly</li>
+                                    <li>Use CLAUDE.md for patterns</li>
+                                    <li>Run security scans</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="mcp-box" style="padding: 35px;">
-                        <h3>🔧 Technical Limits</h3>
-                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
-                            <li>Language-dependent performance</li>
-                            <li>Complex logic needs human design</li>
-                            <li>Dependent on service uptime</li>
-                        </ul>
+                    <div class="two-column" style="gap: 25px;">
+                        <div class="mcp-box" style="padding: 30px;">
+                            <h3>💰 Real Costs</h3>
+                            <ul style="font-size: 0.95em; margin-top: 15px; line-height: 1.8;">
+                                <li>$20/month per developer</li>
+                                <li>2-4 week learning curve</li>
+                                <li>Large codebases hit context limits</li>
+                                <li>Dependent on service uptime</li>
+                            </ul>
+                        </div>
+
+                        <div class="highlight-box" style="padding: 30px;">
+                            <h3>📉 Performance Varies</h3>
+                            <ul style="font-size: 0.95em; margin-top: 15px; line-height: 1.8;">
+                                <li>Better with some languages</li>
+                                <li>Complex logic needs human design</li>
+                                <li>Novel algorithms struggle</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <aside class="notes">
-                    It's not free - $20/month plus time investment to learn. Context limits matter on large projects. Performance varies by language. You're dependent on Anthropic's service.
+                    The honest truth: AI makes mistakes, hallucinates, ignores patterns. Costs $20/month plus learning time. Context limits on large projects. Performance varies by language. Always review, test, and validate.
                 </aside>
             </section>
 
-            <!-- SLIDE: Challenge #3 - When NOT to Use It -->
+            <!-- SLIDE 17: When NOT to Use It -->
             <section>
-                <h2>Challenge #3: When NOT to Use AI Agents</h2>
+                <h2>When NOT to Use AI Agents</h2>
 
-                <div class="two-column" style="margin-top: 50px;">
+                <div class="two-column" style="margin-top: 50px; gap: 25px;">
                     <div class="highlight-box" style="padding: 35px;">
                         <h3>✅ GOOD For</h3>
                         <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
@@ -642,6 +645,7 @@
                             <li>Documentation</li>
                             <li>Code migrations</li>
                             <li>Researching unfamiliar code</li>
+                            <li>API integration</li>
                         </ul>
                     </div>
 
@@ -653,41 +657,55 @@
                             <li>When you're learning basics</li>
                             <li>Quick one-line fixes</li>
                             <li>Production hotfixes under pressure</li>
+                            <li>When you don't understand the domain</li>
                         </ul>
                     </div>
                 </div>
 
+                <div class="mcp-box" style="margin-top: 30px; padding: 30px; text-align: center;">
+                    <p style="font-size: 1.1em; margin: 0;"><strong>Golden Rule:</strong> If you can't review it properly, don't let AI write it</p>
+                </div>
+
                 <aside class="notes">
-                    Know when to use it and when not to. It's great for boilerplate and research, bad for creative algorithms and learning fundamentals. For critical security, use it as an assistant, not an agent.
+                    Know when to use it and when not to. Great for boilerplate, tests, docs, research. Bad for novel algorithms, critical security, learning fundamentals, and hotfixes under pressure. If you can't review it, don't use AI for it.
                 </aside>
             </section>
 
-            <!-- SLIDE: The Future -->
+            <!-- SLIDE 18: The Multi-Agent Future -->
             <section>
-                <h2>The Multi-Agent Future</h2>
+                <h2>The Multi-Agent Future: Where This Is Going</h2>
 
                 <div style="margin-top: 60px; max-width: 900px; margin-left: auto; margin-right: auto;">
-                    <div class="warning-box" style="padding: 45px;">
+                    <div class="mcp-box" style="padding: 45px; margin-bottom: 30px;">
                         <h3 style="margin-bottom: 25px; font-size: 1.3em;">⚡ What's Coming</h3>
                         <ul style="font-size: 1.15em; line-height: 2.2;">
-                            <li>Cloud-based agents: work anywhere</li>
-                            <li>Parallel agents: tests, docs, reviews</li>
-                            <li>You orchestrate, not write</li>
+                            <li><strong>Cloud-based agents:</strong> Work from anywhere, not just terminal</li>
+                            <li><strong>Parallel agents:</strong> One writes tests, one handles docs, one reviews code</li>
+                            <li><strong>You orchestrate:</strong> You direct workflows, agents execute</li>
                         </ul>
+                    </div>
+
+                    <div class="highlight-box" style="padding: 40px; text-align: center;">
+                        <h3 style="margin-bottom: 20px;">The Shift</h3>
+                        <p style="font-size: 1.15em; line-height: 1.8;">
+                            From <strong>"writing code"</strong> to <strong>"designing systems and orchestrating agents"</strong>
+                        </p>
+                        <p style="font-size: 1em; margin-top: 20px; font-style: italic; color: #666;">
+                            This is already happening. Claude.ai/code is bringing multi-agent workflows to the cloud.
+                        </p>
                     </div>
                 </div>
 
                 <aside class="notes">
-                    Future is multi-agent workflows: one agent writes tests while another handles docs and another reviews code. Claude.ai/code brings this to the cloud. Developers become orchestrators.
+                    The future is multi-agent: parallel workflows where one agent writes tests while another handles docs and another reviews code. Developers become orchestrators, not just writers. This is already starting with Claude.ai/code.
                 </aside>
             </section>
 
-            <!-- SLIDE 13: Resources & Q&A -->
+            <!-- SLIDE 19: Resources & Q&A -->
             <section>
                 <h2>📚 Resources & Next Steps</h2>
 
                 <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 20px; margin-top: 30px; height: 82vh;">
-                    <!-- Card 1: Essential Resources -->
                     <div class="highlight-box" style="padding: 25px; display: flex; flex-direction: column;">
                         <h3>📖 Essential Resources</h3>
                         <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8; flex-grow: 1;">
@@ -697,7 +715,6 @@
                         </ul>
                     </div>
 
-                    <!-- Card 2: Try It Monday Morning -->
                     <div class="mcp-box" style="padding: 25px; display: flex; flex-direction: column;">
                         <h3>🚀 Try It Monday Morning</h3>
                         <div class="code-box" style="margin-top: 15px; font-size: 0.7em; flex-grow: 1;">
@@ -713,7 +730,6 @@
                         <p style="font-size: 0.8em; margin-top: 10px; font-style: italic; color: #666;">You'll be prompted to log in on first use</p>
                     </div>
 
-                    <!-- Card 3: Watch Demo -->
                     <div class="mcp-box" style="padding: 25px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
                         <h3>📺 Watch Demo</h3>
                         <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://juregrandovec-briefd.github.io/ai-mcp-presentation/examples.html"
@@ -722,7 +738,6 @@
                         <p style="font-size: 0.85em; margin-top: 10px;"><a href="examples.html" style="color: var(--briefd-green); font-weight: bold;">Feature Built in 15 Minutes</a></p>
                     </div>
 
-                    <!-- Card 4: Questions -->
                     <div class="highlight-box" style="padding: 25px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
                         <h1 style="font-size: 2.5em; margin-bottom: 20px;">Questions?</h1>
                         <p style="font-size: 1.1em;">
@@ -744,14 +759,11 @@
     <script src="plugin/highlight/highlight.js"></script>
     <script>
         Reveal.initialize({
-            // Presentation size configuration
             width: 1920,
             height: 1080,
             margin: 0.04,
             minScale: 0.2,
             maxScale: 1.5,
-
-            // Other settings
             hash: true,
             transition: 'slide',
             transitionSpeed: 'default',
