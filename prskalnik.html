@@ -256,23 +256,6 @@
                 </aside>
             </section>
 
-            <!-- SECTION: Connecting AI Agents -->
-            <section>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; height: 60vh; padding: 0 80px;">
-                    <div style="text-align: left;">
-                        <h1 style="font-size: 3.5em; color: var(--preskok-red);">Connecting AI Agent to...</h1>
-                    </div>
-                    <div style="text-align: left;">
-                        <p style="font-size: 1.8em; line-height: 2; color: inherit; font-weight: bold;">
-                            Slack<br>
-                            Jira<br>
-                            Confluence<br>
-                            GitHub
-                        </p>
-                    </div>
-                </div>
-            </section>
-
             <!-- SLIDE 7: What is MCP? -->
             <section>
                 <h2>Model Context Protocol (MCP)</h2>
@@ -445,14 +428,6 @@
                     Claude Code safety: always review changes before accepting, use pre-commit hooks to prevent secrets from being committed, and never share environment files with AI.
                 </aside>
             </section>
-            <!-- SECTION: The Tools I Use -->
-            <section>
-                <div style="display: flex; align-items: center; justify-content: center; height: 60vh; text-align: center;">
-                    <h1 style="font-size: 3.5em;">The Tools I Use</h1>
-                </div>
-            </section>
-
-
             <!-- PART 3: WHAT DID I USE -->
 
 
@@ -505,201 +480,130 @@
                 </aside>
             </section>
 
-            <!-- SLIDE: MCPs Part 1 - Development Tools -->
+            <!-- SLIDE: MCP Ecosystem -->
             <section>
-                <h2>MCPs: Development Tools</h2>
+                <h2>MCP Ecosystem: 100+ Integrations Available</h2>
+                <p style="font-size: 0.95em; margin-top: 10px; color: #666;">Connect your AI agent to tools you already use</p>
 
-                <div class="two-column" style="margin-top: 30px; gap: 25px;">
-                    <div class="mcp-box" style="padding: 30px;">
-                        <h3 style="text-align: center; display: flex; align-items: center; justify-content: center; gap: 10px;">
-                            <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel" style="height: 28px; width: 28px;">
-                            Laravel Boost
-                        </h3>
-                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
-                            <li>Run Tinker & execute artisan commands</li>
-                            <li>Query database with Eloquent ORM</li>
-                            <li>Search versioned Laravel docs</li>
-                        </ul>
-                    </div>
-                    <div class="mcp-box" style="padding: 30px;">
-                        <h3 style="text-align: center; display: flex; align-items: center; justify-content: center; gap: 10px;">
-                            <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular" style="height: 28px; width: 28px;">
-                            Angular CLI
-                        </h3>
-                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
-                            <li>Generate components & services</li>
-                            <li>Search Angular.dev documentation</li>
-                            <li>Read project structure & configs</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <aside class="notes">
-                    Laravel Boost and Angular CLI MCPs provide framework-specific tools. Laravel Boost handles artisan commands and database queries, Angular CLI generates code and searches docs.
-                </aside>
-            </section>
-
-            <!-- SLIDE: MCPs Part 2 - Integration Tools -->
-            <section>
-                <h2>MCPs: Integration Tools</h2>
-
-                <div class="two-column" style="margin-top: 30px; gap: 25px;">
-                    <div class="mcp-box" style="padding: 30px;">
-                        <h3 style="text-align: center; display: flex; align-items: center; justify-content: center; gap: 10px;">
-                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="height: 28px; width: 28px;">
-                            GitHub
-                        </h3>
-                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
-                            <li>Create & update pull requests</li>
-                            <li>Manage issues & comments</li>
-                            <li>Search code across repositories</li>
-                        </ul>
-                    </div>
-                    <div class="mcp-box" style="padding: 30px;">
-                        <h3 style="text-align: center; display: flex; align-items: center; justify-content: center; gap: 10px;">
-                            <img src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" alt="Slack" style="height: 28px; width: 28px;">
-                            Slack
-                        </h3>
-                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
-                            <li>Read messages & thread replies</li>
-                            <li>Post messages to channels</li>
-                            <li>Search message history</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <aside class="notes">
-                    GitHub MCP handles pull requests and code search. Slack MCP gathers context from team conversations. Started with just GitHub, added others as I found specific needs.
-                </aside>
-            </section>
-
-            <!-- SLIDE: More MCPs Available -->
-            <section>
-                <h2>100+ Community MCPs Available</h2>
-                <p style="font-size: 1em; margin-top: 15px; color: #666;">Expand your AI agent's capabilities with these integrations</p>
-
-                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 40px; max-width: 1200px; margin-left: auto; margin-right: auto;">
-                    <!-- Postgres -->
-                    <div class="mcp-box" style="padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
-                        <img src="https://www.postgresql.org/media/img/about/press/elephant.png" alt="PostgreSQL" style="height: 40px; width: auto;">
-                        <p style="font-size: 0.85em; margin: 0;"><strong>PostgreSQL</strong></p>
-                    </div>
-
-                    <!-- Docker -->
-                    <div class="mcp-box" style="padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
-                        <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker" style="height: 40px; width: auto;">
-                        <p style="font-size: 0.85em; margin: 0;"><strong>Docker</strong></p>
-                    </div>
-
-                    <!-- Figma -->
-                    <div class="mcp-box" style="padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
-                        <img src="https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=670&h=670&q=75&fit=max&auto=format" alt="Figma" style="height: 40px; width: auto;">
-                        <p style="font-size: 0.85em; margin: 0;"><strong>Figma</strong></p>
-                    </div>
-
-                    <!-- Notion -->
-                    <div class="mcp-box" style="padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" alt="Notion" style="height: 40px; width: auto;">
-                        <p style="font-size: 0.85em; margin: 0;"><strong>Notion</strong></p>
-                    </div>
-
-                    <!-- Linear -->
-                    <div class="mcp-box" style="padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
-                        <img src="https://cdn.simpleicons.org/linear/5E6AD2" alt="Linear" style="height: 40px; width: auto;">
-                        <p style="font-size: 0.85em; margin: 0;"><strong>Linear</strong></p>
-                    </div>
-
-                    <!-- Jira -->
-                    <div class="mcp-box" style="padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
-                        <img src="https://cdn.worldvectorlogo.com/logos/jira-1.svg" alt="Jira" style="height: 40px; width: auto;">
-                        <p style="font-size: 0.85em; margin: 0;"><strong>Jira</strong></p>
-                    </div>
-
-                    <!-- GitLab -->
-                    <div class="mcp-box" style="padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
-                        <img src="https://about.gitlab.com/images/press/press-kit-icon.svg" alt="GitLab" style="height: 40px; width: auto;">
-                        <p style="font-size: 0.85em; margin: 0;"><strong>GitLab</strong></p>
-                    </div>
-
-                    <!-- Confluence -->
-                    <div class="mcp-box" style="padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
-                        <img src="https://cdn.worldvectorlogo.com/logos/confluence-1.svg" alt="Confluence" style="height: 40px; width: auto;">
-                        <p style="font-size: 0.85em; margin: 0;"><strong>Confluence</strong></p>
-                    </div>
-                </div>
-
-                <aside class="notes">
-                    Over 100 community MCPs available. Popular ones include database tools like PostgreSQL, DevOps tools like Docker, design tools like Figma, project management like Linear and Jira, and collaboration tools like Confluence. Start with what you need, expand gradually.
-                </aside>
-            </section>
-
-            <!-- SLIDE: .MD Context Files - Project Context -->
-            <section>
-                <h2>.MD Context Files: Project Context</h2>
-                <p style="font-size: 1em; margin-top: 15px; color: #666;">Claude reads these automatically - write conventions once</p>
-
-                <div class="two-column" style="margin-top: 30px; gap: 25px;">
-                    <div class="highlight-box" style="padding: 30px;">
-                        <h3>📄 CLAUDE.md (Project Root)</h3>
-                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
-                            <li>Project-specific conventions & patterns</li>
-                            <li>Testing commands & environments</li>
-                            <li>Architecture decisions & file structure</li>
-                        </ul>
-                    </div>
-                    <div class="mcp-box" style="padding: 30px;">
-                        <h3>🌐 ~/.claude/init/ (Global)</h3>
-                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
-                            <li>Company-wide coding standards</li>
-                            <li>Team best practices</li>
-                            <li>Security rules & policies</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <aside class="notes">
-                    Most underrated feature: .MD files that Claude auto-reads. CLAUDE.md for project rules, ~/.claude/init/ for company standards. Write conventions once, Claude follows forever.
-                </aside>
-            </section>
-
-            <!-- SLIDE: .MD Context Files - Team Workflows -->
-            <section>
-                <h2>.MD Context Files: Team Workflows</h2>
-                <p style="font-size: 1em; margin-top: 15px; color: #666;">Reusable prompts and deep feature context</p>
-
-                <div class="two-column" style="margin-top: 30px; gap: 25px;">
-                    <div class="mcp-box" style="padding: 30px;">
-                        <h3>⚡ Custom Commands</h3>
-                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
-                            <li>Reusable prompt templates</li>
-                            <li>Invoke with <code>/command-name</code></li>
-                            <li>Share across team via git</li>
-                        </ul>
-                        <div class="code-box" style="margin-top: 15px; font-size: 0.75em; padding: 15px;">
-                            .claude/commands/review.md<br>
-                            Usage: /review
+                <div style="margin-top: 35px;">
+                    <!-- What I Use -->
+                    <div class="highlight-box" style="padding: 25px; margin-bottom: 20px;">
+                        <h3 style="font-size: 1.2em; margin-bottom: 15px;">🔧 What I Use Daily</h3>
+                        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; font-size: 0.85em;">
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel" style="height: 20px; width: 20px;">
+                                <strong>Laravel Boost</strong>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular" style="height: 20px; width: 20px;">
+                                <strong>Angular CLI</strong>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="height: 20px; width: 20px;">
+                                <strong>GitHub</strong>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <img src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" alt="Slack" style="height: 20px; width: 20px;">
+                                <strong>Slack</strong>
+                            </div>
                         </div>
                     </div>
-                    <div class="highlight-box" style="padding: 30px;">
-                        <h3>📁 docs/ai-context/</h3>
-                        <ul style="font-size: 0.9em; margin-top: 15px; line-height: 1.8;">
-                            <li>Deep context per feature/module</li>
-                            <li>Business logic explanations</li>
-                            <li>Integration patterns & dependencies</li>
+
+                    <!-- Popular Options -->
+                    <div class="mcp-box" style="padding: 25px;">
+                        <h3 style="font-size: 1.2em; margin-bottom: 15px;">🌟 Popular Community MCPs</h3>
+                        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; font-size: 0.85em;">
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <img src="https://www.postgresql.org/media/img/about/press/elephant.png" alt="PostgreSQL" style="height: 20px; width: 20px;">
+                                PostgreSQL
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker" style="height: 20px; width: 20px;">
+                                Docker
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <img src="https://cdn.simpleicons.org/linear/5E6AD2" alt="Linear" style="height: 20px; width: 20px;">
+                                Linear
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <img src="https://cdn.worldvectorlogo.com/logos/jira-1.svg" alt="Jira" style="height: 20px; width: 20px;">
+                                Jira
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <img src="https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=670&h=670&q=75&fit=max&auto=format" alt="Figma" style="height: 20px; width: 20px;">
+                                Figma
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" alt="Notion" style="height: 20px; width: 20px;">
+                                Notion
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <img src="https://about.gitlab.com/images/press/press-kit-icon.svg" alt="GitLab" style="height: 20px; width: 20px;">
+                                GitLab
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <img src="https://cdn.worldvectorlogo.com/logos/confluence-1.svg" alt="Confluence" style="height: 20px; width: 20px;">
+                                Confluence
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    I use Laravel Boost for artisan commands, Angular CLI for code generation, GitHub for PRs, and Slack for team context. 100+ community MCPs available - databases, DevOps, design tools, project management. Start small, expand as needed.
+                </aside>
+            </section>
+
+            <!-- SLIDE: .MD Context Files -->
+            <section>
+                <h2>.MD Context Files: Write Once, AI Follows Forever</h2>
+                <p style="font-size: 0.95em; margin-top: 10px; color: #666;">Claude reads these automatically - no prompting needed</p>
+
+                <div style="margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div class="highlight-box" style="padding: 25px;">
+                        <h3 style="font-size: 1.1em;">📄 CLAUDE.md</h3>
+                        <p style="font-size: 0.8em; color: #666; margin-top: 5px;">Project root</p>
+                        <ul style="font-size: 0.85em; margin-top: 15px; line-height: 1.8;">
+                            <li>Project conventions</li>
+                            <li>Testing commands</li>
+                            <li>Architecture patterns</li>
+                        </ul>
+                    </div>
+
+                    <div class="mcp-box" style="padding: 25px;">
+                        <h3 style="font-size: 1.1em;">🌐 ~/.claude/init/</h3>
+                        <p style="font-size: 0.8em; color: #666; margin-top: 5px;">Global config</p>
+                        <ul style="font-size: 0.85em; margin-top: 15px; line-height: 1.8;">
+                            <li>Company standards</li>
+                            <li>Team practices</li>
+                            <li>Security policies</li>
+                        </ul>
+                    </div>
+
+                    <div class="mcp-box" style="padding: 25px;">
+                        <h3 style="font-size: 1.1em;">⚡ .claude/commands/</h3>
+                        <p style="font-size: 0.8em; color: #666; margin-top: 5px;">Custom slash commands</p>
+                        <ul style="font-size: 0.85em; margin-top: 15px; line-height: 1.8;">
+                            <li>Reusable prompts</li>
+                            <li>Use: <code>/command-name</code></li>
+                            <li>Share via git</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-box" style="padding: 25px;">
+                        <h3 style="font-size: 1.1em;">📁 docs/ai-context/</h3>
+                        <p style="font-size: 0.8em; color: #666; margin-top: 5px;">Feature docs</p>
+                        <ul style="font-size: 0.85em; margin-top: 15px; line-height: 1.8;">
+                            <li>Business logic</li>
+                            <li>Module context</li>
+                            <li>Dependencies</li>
                         </ul>
                     </div>
                 </div>
 
                 <aside class="notes">
-                    .claude/commands/ for reusable prompts like /review or /test-feature. docs/ai-context/ for deep feature documentation. Both help maintain consistent AI behavior across the team.
+                    Most underrated feature: .MD files Claude auto-reads. CLAUDE.md for project rules, ~/.claude/init/ for company standards, .claude/commands/ for reusable prompts, docs/ai-context/ for deep feature context. Write once, Claude follows forever.
                 </aside>
-            </section>
-
-            <!-- SECTION: FINDINGS -->
-            <section>
-                <div style="display: flex; align-items: center; justify-content: center; height: 60vh; text-align: center;">
-                    <h1 style="font-size: 3.5em;">FINDINGS</h1>
-                </div>
             </section>
 
             <!-- FINDING 1: Developer Workload Shift -->
@@ -796,11 +700,97 @@
                 </aside>
             </section>
 
-            <!-- SECTION: The Future -->
+            <!-- SLIDE: Challenge #1 - When AI Fails -->
             <section>
-                <div style="display: flex; align-items: center; justify-content: center; height: 60vh; text-align: center;">
-                    <h1 style="font-size: 3.5em;">The Future</h1>
+                <h2>Challenge #1: When AI Gets It Wrong</h2>
+
+                <div class="two-column" style="margin-top: 50px;">
+                    <div class="warning-box" style="padding: 35px;">
+                        <h3>⚠️ Common Failures</h3>
+                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
+                            <li>Hallucinations: plausible but wrong code</li>
+                            <li>Ignores your architecture patterns</li>
+                            <li>Introduces security vulnerabilities</li>
+                            <li>Outdated package versions</li>
+                        </ul>
+                    </div>
+
+                    <div class="mcp-box" style="padding: 35px;">
+                        <h3>✅ What Helps</h3>
+                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
+                            <li>Always review everything</li>
+                            <li>Test thoroughly</li>
+                            <li>Use CLAUDE.md for patterns</li>
+                            <li>Run security scans</li>
+                        </ul>
+                    </div>
                 </div>
+
+                <aside class="notes">
+                    AI makes mistakes. Sometimes it hallucinates APIs that don't exist, sometimes it violates your architecture, sometimes it introduces security issues. Never trust blindly - always review and test.
+                </aside>
+            </section>
+
+            <!-- SLIDE: Challenge #2 - Costs & Limits -->
+            <section>
+                <h2>Challenge #2: Real Costs & Limits</h2>
+
+                <div style="margin-top: 50px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                    <div class="warning-box" style="padding: 35px; margin-bottom: 25px;">
+                        <h3>💰 Money & Time</h3>
+                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
+                            <li>Claude Pro: $20/month per developer</li>
+                            <li>Learning curve: 2-4 weeks to get good</li>
+                            <li>Large codebases hit context limits (~200K tokens)</li>
+                        </ul>
+                    </div>
+
+                    <div class="mcp-box" style="padding: 35px;">
+                        <h3>🔧 Technical Limits</h3>
+                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
+                            <li>Works better with some languages than others</li>
+                            <li>Complex business logic still needs human design</li>
+                            <li>Dependency on service uptime</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    It's not free - $20/month plus time investment to learn. Context limits matter on large projects. Performance varies by language. You're dependent on Anthropic's service.
+                </aside>
+            </section>
+
+            <!-- SLIDE: Challenge #3 - When NOT to Use It -->
+            <section>
+                <h2>Challenge #3: When NOT to Use AI Agents</h2>
+
+                <div class="two-column" style="margin-top: 50px;">
+                    <div class="highlight-box" style="padding: 35px;">
+                        <h3>✅ GOOD For</h3>
+                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
+                            <li>Boilerplate code</li>
+                            <li>Writing tests</li>
+                            <li>Documentation</li>
+                            <li>Code migrations</li>
+                            <li>Researching unfamiliar code</li>
+                        </ul>
+                    </div>
+
+                    <div class="warning-box" style="padding: 35px;">
+                        <h3>❌ BAD For</h3>
+                        <ul style="font-size: 1.05em; margin-top: 20px; line-height: 2;">
+                            <li>Novel algorithms</li>
+                            <li>Critical security code</li>
+                            <li>When you're learning basics</li>
+                            <li>Quick one-line fixes</li>
+                            <li>Production hotfixes under pressure</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    Know when to use it and when not to. It's great for boilerplate and research, bad for creative algorithms and learning fundamentals. For critical security, use it as an assistant, not an agent.
+                </aside>
             </section>
 
             <!-- SLIDE: The Future -->
